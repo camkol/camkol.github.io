@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: url('images/ALL/190a441_d0868495687c4ad8b27e2084aa3d9e35_mv2.webp');
+    background-repeat: no-repeat;
+    background-position-x: left;
+    height: 150px;
+    width: 100%;
+}
+
+
+
+nav {
+
+    background-color: rgba(61, 59, 64, 0.76);
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    z-index: 2;
+}
+
+li>a {
+    text-shadow: -4px 4px 4px rgba(0, 0, 0, 0.89);
+    text-decoration: none;
+}
+
+nav>ul {
+    float: right;
+}
+
+nav>ul>li {
+    padding: 20px 15px;
+
+    display: inline-block;
+}
+
+ul li:hover {
+    background-color: rgba(209, 205, 213, 0.76);
+}
+
+ul li:active {
+    position: relative;
+    top: 2px;
+}
+
+.xyline {
+    margin: 5px 0;
+    padding: 0.2rem;
+}
+
+hr {
+    width: 50%;
+    margin: 10px 0;
+}
+
+.xyline>h1 {
+    font-family: 'Great Vibes', sacramento, satisfy, 'Dancing Script';
+    margin: 10px 0;
+    font-size: 50px;
+    text-shadow: -5px 1px 3px rgba(0, 0, 0, 0.56);
+}
+
+.xyline>h4 {
+    margin-bottom: 20px;
+}
+
+#sel1 {
+    color: #48F50A;
+}
+
+#sel2 {
+    color: #f51414;
+}
+
+#sel3 {
+    color:
+        #4897FD;
+}
+
+#sel4 {
+    color:
+        #9812F6;
+}
+
+#sel5 {
+    color: rgb(122, 122, 122);
+}
+
+.info {
+    width: 500px;
+}
+
+footer {
+    background-image: url('images/ALL/290a441_d5d5735ee93845a69865f1c906170c1b_mv2.webp');
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    height: 250px;
+}
+
+#fupper {
+    height: 75%;
+}
+
+#funder {
+    height: 25%;
+    background-color: rgba(61, 59, 64, 0.76);
+    z-index: 1;
+
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.star {
+    background-color: rgba(209, 205, 213, 0.76);
+
+}
