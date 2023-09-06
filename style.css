@@ -124,6 +124,10 @@ figure img {
   background: linear-gradient(rgba(239, 6, 247, 0.2), rgba(252, 168, 245, 0.2));
 }
 
+.htmlCss {
+  background: linear-gradient(rgba(253, 69, 13, 0.2), rgba(33, 30, 248, 0.2));
+}
+
 .logo {
   margin: 1%;
 }
