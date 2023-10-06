@@ -132,7 +132,7 @@ figure img {
   margin: 1%;
 }
 .logo img {
-  width: 60px;
+  height: 60px;
   border-radius: 15%;
 }
 
@@ -140,4 +140,8 @@ canvas {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.logo2 img {
+  height: 40px;
 }/*# sourceMappingURL=style.css.map */
