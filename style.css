@@ -127,6 +127,9 @@ figure img {
 .htmlCss {
   background: linear-gradient(rgba(253, 69, 13, 0.2), rgba(33, 30, 248, 0.2));
 }
+.bootstap {
+  background: linear-gradient(rgba(0, 17, 255, 0.2), rgba(49, 52, 248, 0.2));
+}
 
 .logo {
   margin: 1%;
