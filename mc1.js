@@ -9,6 +9,6 @@ var letterColors = [blue, white, black, purple, yellow];
 
 drawName(wordToDisplay, letterColors);
 
-bubbleShape = 'circle';
+bubbleShape = "circle";
 
 bounceBubbles();

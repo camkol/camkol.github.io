@@ -64,10 +64,12 @@
     <section class="jumbotron">
       <div class="container">
         <div class="row">
-          <h2>Education</h2>
-          <canvas id="myCanvas"></canvas>
-          <script type="text/javascript" src="bubbles.js"></script>
-          <script type="text/javascript" src="mc3.js"></script>
+          <div id="mobile"><h2>Education</h2></div>
+          <div id="desktop">
+            <canvas id="myCanvas"></canvas>
+            <script type="text/javascript" src="bubbles.js"></script>
+            <script type="text/javascript" src="mc3.js"></script>
+          </div>
         </div>
       </div>
     </section>
@@ -413,7 +415,8 @@
               <li>ES6 Modules</li>
               <li>Browser Compatibility and Transpilation</li>
             </ul>
-            <li>Introduction to React</li><a href="" target="_blank"></a>
+            <li>Introduction to React</li>
+            <a href="" target="_blank"></a>
             <ul>
               <li>JSX</li>
               <li>React Components</li>
@@ -443,7 +446,13 @@
               <li>Jamming</li>
             </ul>
           </ol>
-          <h5 class="font-weight-bold"><a href="https://www.codecademy.com/profiles/koliyus/certificates/9b7bcc38d0ed49f593228763cbfd51e3" target="_blank">Learn PHP Skill Path</a></h5> 
+          <h5 class="font-weight-bold">
+            <a
+              href="https://www.codecademy.com/profiles/koliyus/certificates/9b7bcc38d0ed49f593228763cbfd51e3"
+              target="_blank"
+              >Learn PHP Skill Path</a
+            >
+          </h5>
 
           <ol>
             <li>Introduction to the Learn PHP Skill Path</li>
@@ -479,28 +488,29 @@
     </section>
     <footer class="container">
       <div class="row">
-        <p>&copy; 2023 Cameron Howze</p>
         <div class="col-2 logo">
-          <a href="https://github.com/camkol"
+          <a href="https://github.com/camkol" target="_blank"
             ><img src="images/github.png" alt="GitHub"
           /></a>
         </div>
         <div class="col-2 logo">
-          <a href="www.linkedin.com/in/cameron-howze-28a646109"
+          <a href="www.linkedin.com/in/cameron-howze-28a646109" target="_blank"
             ><img src="images/linkedin.png" alt="LinkedIn"
           /></a>
         </div>
         <div class="col-2 logo">
-          <a href="https://www.facebook.com/wondering.thomas/"
+          <a href="https://www.facebook.com/wondering.thomas/" target="_blank"
             ><img src="images/facebook.png" alt="Facebook"
           /></a>
         </div>
         <div class="col-2 logo">
-          <a href="mailto:cameronhowze4@outlook.com"
+          <a href="mailto:cameronhowze4@outlook.com" target="_blank"
             ><img src="images/email.png" alt="Email"
           /></a>
         </div>
       </div>
+
+      <p>&copy; 2023 Cameron Howze</p>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script

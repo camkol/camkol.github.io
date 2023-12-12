@@ -45,7 +45,7 @@ a {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url("https://content.codecademy.com/projects/personal_portfolio/background.jpeg");
+  background-image: url("images/background.jpg");
   background-size: cover;
   color: #ffffff;
   height: 400px;
@@ -148,4 +148,17 @@ canvas {
 
 .logo2 img {
   height: 40px;
+}
+
+#mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 760px) {
+  #mobile {
+    display: block;
+  }
+  #desktop {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
