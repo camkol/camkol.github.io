@@ -112,10 +112,6 @@ figure img {
   display: none;
 }
 
-.jquery {
-  background: linear-gradient(rgba(24, 132, 255, 0.2), rgba(142, 194, 253, 0.2));
-}
-
 .javascript {
   background: linear-gradient(rgba(251, 255, 4, 0.2), rgba(247, 248, 170, 0.2));
 }
@@ -125,7 +121,7 @@ figure img {
 }
 
 .htmlCss {
-  background: linear-gradient(rgba(253, 69, 13, 0.2), rgba(33, 30, 248, 0.2));
+  background: linear-gradient(rgba(24, 132, 255, 0.2), rgba(142, 194, 253, 0.2));
 }
 
 .bootstrap {
@@ -133,7 +129,7 @@ figure img {
 }
 
 .logo {
-  margin: 1%;
+  margin: 2%;
 }
 .logo img {
   height: 60px;

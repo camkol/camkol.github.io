@@ -108,12 +108,6 @@ figure {
 .hide {
   display: none;
 }
-.jquery {
-  background: linear-gradient(
-    rgba(24, 132, 255, 0.2),
-    (rgba(142, 194, 253, 0.2))
-  );
-}
 
 .javascript {
   background: linear-gradient(
@@ -128,14 +122,18 @@ figure {
   );
 }
 .htmlCss {
-  background: linear-gradient(rgba(253, 69, 13, 0.2), (rgba(33, 30, 248, 0.2)));
+  background: linear-gradient(
+    rgba(24, 132, 255, 0.2),
+    (rgba(142, 194, 253, 0.2))
+  );
+  //background: linear-gradient(rgba(253, 69, 13, 0.2), (rgba(33, 30, 248, 0.2)));
 }
 .bootstrap {
   background: linear-gradient(rgba(111, 0, 255, 0.2), rgba(109, 49, 248, 0.2));
 }
 
 .logo {
-  margin: 1%;
+  margin: 2%;
   img {
     height: 60px;
     border-radius: 15%;
