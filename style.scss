@@ -169,3 +169,8 @@ canvas {
     display: none;
   }
 }
+@media only screen and (max-width: 370px) {
+  iframe {
+    width: 100%;
+  }
+}

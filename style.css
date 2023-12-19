@@ -165,4 +165,9 @@ canvas {
   #desktop {
     display: none;
   }
+}
+@media only screen and (max-width: 370px) {
+  iframe {
+    width: 100%;
+  }
 }/*# sourceMappingURL=style.css.map */
