@@ -17,3 +17,4 @@
 -Added memegen
 -Added 20000 leagues
 -Added BanaTravel
+-Added Freshdeals
