@@ -18,3 +18,5 @@
 -Added 20000 leagues
 -Added BanaTravel
 -Added Freshdeals
+-Added Museum of Sweets
+-Added Curious Ornithologist
