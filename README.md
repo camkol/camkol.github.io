@@ -21,3 +21,4 @@
 -Added Museum of Sweets
 -Added Curious Ornithologist
 -Added Price Table
+-Reorganized TeaCozy
