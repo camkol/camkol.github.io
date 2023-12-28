@@ -22,3 +22,4 @@
 -Added Curious Ornithologist
 -Added Price Table
 -Reorganized TeaCozy
+-Repaired LinkedIn link
