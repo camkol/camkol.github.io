@@ -23,4 +23,3 @@
 -Added Price Table
 -Reorganized TeaCozy
 -Repaired LinkedIn link
--Added Price Table
