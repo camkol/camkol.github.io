@@ -25,3 +25,4 @@
 -Reorganized TeaCozy
 -Repaired LinkedIn link
 -Added Font Awesome to contacts
+-Added HistoryOfProgramming
