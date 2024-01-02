@@ -27,3 +27,4 @@
 -Repaired LinkedIn link
 -Added Font Awesome to contacts
 -Added HistoryOfProgramming
+-Added Photoshop Icons
