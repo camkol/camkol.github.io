@@ -7,10 +7,11 @@
    -SASS
 3. JavaScript
    -jQuery
+4. Photoshop
 
 ## Notes
 
--Worked on images and made self-sufficient
+-Worked on images and made self-sufficient with Photoshop
 -Added bootstrap
 -Added projects
 -Added navigation button
