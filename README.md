@@ -30,3 +30,4 @@
 -Added Photoshop Icons
 -Addded Survey
 -Added title icon
+-Added Colmar Academy
