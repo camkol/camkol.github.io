@@ -31,3 +31,4 @@
 -Addded Survey
 -Added title icon
 -Added Colmar Academy
+-Added Calculator
