@@ -32,3 +32,4 @@
 -Added title icon
 -Added Colmar Academy
 -Added Calculator
+-Added ARIA to pages
