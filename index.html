@@ -117,6 +117,7 @@
               <img src="images/colmaracademy.jpg" alt="" />
             </div>
 
+            <hr />
             <h5 class="card-title">Colmar Academy</h5>
             <h6 class="card-subtitle mb-2 text-muted">HTML | CSS | SASS</h6>
           </div>
@@ -146,6 +147,7 @@
           <div class="card-body presser">
             <div class="imager"><img src="images/xyline.jpg" alt="" /></div>
 
+            <hr />
             <h5 class="card-title">Xystinyfind</h5>
             <h6 class="card-subtitle mb-2 text-muted">
               HTML | Bootstrap | CSS | SASS | JavaScript
@@ -179,6 +181,7 @@
               <img src="images/memegenerator.png" alt="" />
             </div>
 
+            <hr />
             <h5 class="card-title">MEME Generator</h5>
             <h6 class="card-subtitle mb-2 text-muted">
               HTML | CSS | JavaScript
@@ -212,6 +215,7 @@
               <img src="images/museumofsweets.jpg" alt="" />
             </div>
 
+            <hr />
             <h5 class="card-title">Museum of Sweets</h5>
             <h6 class="card-subtitle mb-2 text-muted">
               HTML | Bootstrap | CSS | SASS | JavaScript
@@ -245,6 +249,7 @@
               <img src="images/scorekeeper.jpg" alt="" />
             </div>
 
+            <hr />
             <h5 class="card-title">Score Keeper</h5>
             <h6 class="card-subtitle mb-2 text-muted">
               HTML | Bulma | CSS | SASS | JavaScript
@@ -276,6 +281,7 @@
           <div class="card-body presser">
             <div class="imager"><img src="images/soleshoes.jpg" alt="" /></div>
 
+            <hr />
             <h5 class="card-title">Sole Shoes</h5>
             <h6 class="card-subtitle mb-2 text-muted">
               HTML | CSS | JavaScript | jQuery
@@ -296,13 +302,19 @@
               <a
                 href="https://camkol.github.io/SoleShoes/"
                 class="card-link"
-                target="_blank"
+                target="myWindow"
+                onclick="openInWindow(this.href); return false;"
                 >View</a
               >
             </h4>
           </div>
         </div>
       </div>
+      <script>
+        function openInWindow(url) {
+          window.open(url, "myWindow", "width=600,height=400");
+        }
+      </script>
     </section>
     <footer class="container">
       <div class="row" style="margin-bottom: 1rem">
