@@ -33,3 +33,4 @@
 -Added Colmar Academy
 -Added Calculator
 -Added ARIA to pages
+-overhauling index.html for more improved first impression
