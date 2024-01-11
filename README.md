@@ -36,3 +36,4 @@
 -overhauling index.html for more improved first impression
 -Arranged presentation sites
 -Created and edited images for presenter sites
+-Added pop-up function to all view links
