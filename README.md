@@ -34,3 +34,5 @@
 -Added Calculator
 -Added ARIA to pages
 -overhauling index.html for more improved first impression
+-Arranged presentation sites
+-Created and edited images for presenter sites

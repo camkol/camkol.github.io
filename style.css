@@ -158,8 +158,11 @@ canvas {
   display: none;
 }
 
-.presenter {
+.container .row .presenter {
   width: 18rem;
+}
+.container .row .presenter .presser .imager {
+  height: 200px;
 }
 
 @media only screen and (max-width: 760px) {
@@ -170,8 +173,19 @@ canvas {
     display: none;
   }
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 500px) {
+  footer {
+    margin-top: 50px;
+  }
+}
+@media only screen and (max-width: 490px) {
   iframe {
     width: 100%;
+  }
+  .container .row .presenter {
+    width: 100%;
+  }
+  .container .row .presenter .presser .imager {
+    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
