@@ -37,3 +37,4 @@
 -Arranged presentation sites
 -Created and edited images for presenter sites
 -Added pop-up function to all view links
+-tighten up presenters

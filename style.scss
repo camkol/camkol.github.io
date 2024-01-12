@@ -167,12 +167,62 @@ canvas {
       .presser {
         .imager {
           height: 200px;
+          #colmarAcademy {
+            margin-top: 70px;
+          }
+          #xysTinyFind {
+            margin-top: 30px;
+          }
+          #memeGenerator {
+            margin-top: 70px;
+          }
+          #museumOfSweets {
+            margin-top: 20px;
+          }
+          #scoreKeeper {
+            margin-top: 0;
+          }
+          #soleShoes {
+            margin-top: 20px;
+          }
         }
       }
     }
   }
 }
 
+@media only screen and (max-width: 780px) {
+  .container {
+    .row {
+      .presenter {
+        width: 18rem;
+        .presser {
+          .imager {
+            height: 120px;
+            #colmarAcademy {
+              margin-top: 40px;
+            }
+            #xysTinyFind {
+              margin-top: 30px;
+            }
+            #memeGenerator {
+              margin-top: 40px;
+            }
+            #museumOfSweets {
+              margin-top: 20px;
+            }
+            #scoreKeeper {
+              margin-top: 0;
+            }
+            #soleShoes {
+              margin-top: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media only screen and (max-width: 760px) {
   #mobile {
     display: block;
@@ -197,6 +247,24 @@ canvas {
         .presser {
           .imager {
             height: auto;
+            #colmarAcademy {
+              margin-top: 0;
+            }
+            #xysTinyFind {
+              margin-top: 0;
+            }
+            #memeGenerator {
+              margin-top: 0;
+            }
+            #museumOfSweets {
+              margin-top: 0;
+            }
+            #scoreKeeper {
+              margin-top: 0;
+            }
+            #soleShoes {
+              margin-top: 0;
+            }
           }
         }
       }
