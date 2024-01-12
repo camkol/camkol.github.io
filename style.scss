@@ -192,6 +192,12 @@ canvas {
 }
 
 @media only screen and (max-width: 780px) {
+  #mobile {
+    display: block;
+  }
+  #desktop {
+    display: none;
+  }
   .container {
     .row {
       .presenter {
@@ -223,14 +229,7 @@ canvas {
     }
   }
 }
-@media only screen and (max-width: 760px) {
-  #mobile {
-    display: block;
-  }
-  #desktop {
-    display: none;
-  }
-}
+
 @media only screen and (min-width: 500px) {
   footer {
     margin-top: 50px;
