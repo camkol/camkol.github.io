@@ -45,3 +45,4 @@
 -add process to MEME gen
 -add process to MoS
 -add process to scorekeeper
+-add process to soleshoes
