@@ -34,11 +34,12 @@
 -Added Calculator
 -Added ARIA to pages
 -overhauling index.html for more improved first impression
--Arranged presentation sites
--Created and edited images for presenter sites
--Added pop-up function to all view links
--tighten up presenters
+-Arranged presentation sites on index.html
+-Created and edited images for presenter sites on index.html
+-Added pop-up function to all view links on index.html
+-tighten up presenters on index.html
 -created storage folder for unused items
 -moved project folder out
 -add process to Xyline
 -add process to Colmar
+-add process to MEME gen
