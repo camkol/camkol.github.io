@@ -43,3 +43,5 @@
 -add process to Xyline
 -add process to Colmar
 -add process to MEME gen
+-add process to MoS
+-add process to scorekeeper
