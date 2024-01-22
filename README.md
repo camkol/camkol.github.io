@@ -47,3 +47,4 @@
 - add process to scorekeeper
 - add process to soleshoes
 - added Number Guesser
+- added Dragon Repeller
