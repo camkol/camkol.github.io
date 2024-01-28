@@ -49,3 +49,4 @@
 - added Number Guesser
 - added Dragon Repeller
 - added Mixed Messages
+- updated about photo
