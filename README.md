@@ -50,3 +50,4 @@
 - added Dragon Repeller
 - added Mixed Messages
 - updated about photo
+- Calorie Counter
