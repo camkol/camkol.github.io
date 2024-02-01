@@ -50,4 +50,5 @@
 - added Dragon Repeller
 - added Mixed Messages
 - updated about photo
-- Calorie Counter
+- Added Calorie Counter
+- Added Chris Music Producer
