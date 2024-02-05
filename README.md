@@ -55,3 +55,4 @@
 - Took away the index title animation
 - modified GitHub text
 - modified View to open a new tab
+- Modified process information
