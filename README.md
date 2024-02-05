@@ -56,3 +56,5 @@
 - modified GitHub text
 - modified View to open a new tab
 - Modified process information
+- change title
+- updated and configure education
