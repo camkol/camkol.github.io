@@ -58,3 +58,4 @@
 - Modified process information
 - change title
 - updated and configure education
+- Improved eduaction and classes
