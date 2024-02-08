@@ -61,11 +61,6 @@ a {
   color: #fff;
 }
 
-section .row img {
-  margin: 0 0 30px;
-  width: 100%;
-}
-
 .col-md-6 {
   margin: 0 0 30px;
 }
@@ -87,17 +82,18 @@ section .row img {
   margin: 0 0 30px;
 }
 
-.portrait {
-  width: 350px;
-  height: 300px;
-}
-
 figure {
   margin-bottom: 30px;
 }
 figure img {
   width: 100%;
   height: auto;
+}
+
+.imageHolder {
+  height: 140px;
+  display: flex;
+  align-items: center;
 }
 
 .views {

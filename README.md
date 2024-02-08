@@ -63,3 +63,4 @@
 - added Chris the Producer to home page
 - Changed background
 - changed about me text
+- updated schools
