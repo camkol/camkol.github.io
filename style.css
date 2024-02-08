@@ -91,9 +91,13 @@ figure img {
 }
 
 .imageHolder {
-  height: 140px;
+  height: 160px;
   display: flex;
   align-items: center;
+}
+
+#profilePic {
+  width: 100%;
 }
 
 .views {
@@ -102,6 +106,24 @@ figure img {
 
 .presser {
   cursor: pointer;
+}
+.presser #xysTinyFind {
+  background-image: url("images/xyline-site.JPG");
+}
+.presser #chris {
+  background-image: url("images/chris-site.JPG");
+}
+.presser #dragon {
+  background-image: url("images/dragon-site.JPG");
+}
+.presser #memeGenerator {
+  background-image: url("images/meme-site.JPG");
+}
+.presser #soleShoes {
+  background-image: url("images/soleshoes-site.JPG");
+}
+.presser #colmarAcademy {
+  background-image: url("images/colmaracademy-site.JPG");
 }
 
 .hide {
@@ -150,33 +172,24 @@ canvas {
   width: 5px;
 }
 
+.imagist {
+  width: 100%;
+}
+
+/*.imagist:hover {
+  display: none;
+}*/
+.imager {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 #mobile {
   display: none;
 }
 
 .container .row .presenter {
   width: 18rem;
-}
-.container .row .presenter .presser .imager {
-  height: 200px;
-}
-.container .row .presenter .presser .imager #colmarAcademy {
-  margin-top: 70px;
-}
-.container .row .presenter .presser .imager #xysTinyFind {
-  margin-top: 30px;
-}
-.container .row .presenter .presser .imager #memeGenerator {
-  margin-top: 70px;
-}
-.container .row .presenter .presser .imager #museumOfSweets {
-  margin-top: 20px;
-}
-.container .row .presenter .presser .imager #scoreKeeper {
-  margin-top: 0;
-}
-.container .row .presenter .presser .imager #soleShoes {
-  margin-top: 20px;
 }
 
 @media only screen and (max-width: 780px) {
@@ -192,26 +205,11 @@ canvas {
   .container .row .presenter .presser .imager {
     height: 120px;
   }
-  .container .row .presenter .presser .imager #colmarAcademy {
-    margin-top: 40px;
-  }
-  .container .row .presenter .presser .imager #xysTinyFind {
-    margin-top: 30px;
-  }
-  .container .row .presenter .presser .imager #memeGenerator {
-    margin-top: 40px;
-  }
-  .container .row .presenter .presser .imager #museumOfSweets {
-    margin-top: 20px;
-  }
-  .container .row .presenter .presser .imager #scoreKeeper {
-    margin-top: 0;
-  }
-  .container .row .presenter .presser .imager #soleShoes {
-    margin-top: 20px;
-  }
 }
 @media only screen and (min-width: 500px) {
+  #profilePic {
+    border-radius: 50px;
+  }
   footer {
     margin-top: 50px;
   }
