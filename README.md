@@ -61,3 +61,5 @@
 - Improved eduaction and classes
 - added dragon repeller to home page
 - added Chris the Producer to home page
+- Changed background
+- changed about me text
