@@ -158,7 +158,7 @@ canvas {
   width: 100%;
   display: block;
   transition: filter 1s ease;
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
 .imagist:hover {
