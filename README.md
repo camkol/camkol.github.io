@@ -66,3 +66,4 @@
 - updated schools
 - Working on the images
 - Improved project tabs
+- changed background
