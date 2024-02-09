@@ -103,25 +103,8 @@ figure {
 
 .presser {
   cursor: pointer;
-  #xysTinyFind {
-    background-image: url("images/xyline-site.JPG");
-  }
-  #chris {
-    background-image: url("images/chris-site.JPG");
-  }
-  #dragon {
-    background-image: url("images/dragon-site.JPG");
-  }
-  #memeGenerator {
-    background-image: url("images/meme-site.JPG");
-  }
-  #soleShoes {
-    background-image: url("images/soleshoes-site.JPG");
-  }
-  #colmarAcademy {
-    background-image: url("images/colmaracademy-site.JPG");
-  }
 }
+
 .hide {
   display: none;
 }
@@ -176,11 +159,13 @@ canvas {
 }
 .imagist {
   width: 100%;
-  // display: none;
+  display: block;
+  transition: filter 1s ease;
+  border-radius: 50px;
 }
-/*.imagist:hover {
-  display: none;
-}*/
+.imagist:hover {
+  filter: brightness(70%);
+}
 .imager {
   background-repeat: no-repeat;
   background-size: cover;

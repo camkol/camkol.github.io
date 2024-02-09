@@ -64,3 +64,5 @@
 - Changed background
 - changed about me text
 - updated schools
+- Working on the images
+- Improved project tabs
