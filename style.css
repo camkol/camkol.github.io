@@ -61,6 +61,11 @@ a {
   color: #fff;
 }
 
+.titles {
+  font-family: "Macondo", cursive;
+  font-size: 2rem;
+}
+
 .col-md-6 {
   margin: 0 0 30px;
 }
