@@ -68,3 +68,4 @@
 - Improved project tabs
 - changed background
 - combinating pages
+- improved and organized photos
