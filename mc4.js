@@ -1,4 +1,4 @@
-var wordToDisplay = "Experience";
+var wordToDisplay = "Library";
 
 var blue = [28, 149, 248];
 var white = [255, 255, 255];
@@ -9,6 +9,6 @@ var letterColors = [white, white, white, white, white];
 
 drawName(wordToDisplay, letterColors);
 
-bubbleShape = "circle";
+bubbleShape = "square";
 
 bounceBubbles();
