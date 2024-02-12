@@ -71,3 +71,4 @@
 - improved and organized photos
 - Arrange and updated page links
 - Added animation to header
+- added smooth scrolling effect
