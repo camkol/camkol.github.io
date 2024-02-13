@@ -72,3 +72,4 @@
 - Arrange and updated page links
 - Added animation to header
 - added smooth scrolling effect
+- improved project section with hovering effects
