@@ -147,6 +147,10 @@ figure img {
   cursor: pointer;
 }
 
+.pressers {
+  cursor: pointer;
+}
+
 .hide {
   display: none;
 }
@@ -192,7 +196,7 @@ canvas {
 .imagist {
   width: 100%;
   display: block;
-  transition: filter 1s ease;
+  transition: filter 0.3s ease;
   border-radius: 20px;
 }
 
@@ -261,7 +265,7 @@ canvas {
   .container .row .presenter {
     max-width: 13.5rem;
   }
-  .container .row .presenter .presser .imager {
+  .container .row .presenter .pressers .imager {
     height: 120px;
   }
 }

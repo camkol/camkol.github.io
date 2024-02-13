@@ -16,12 +16,10 @@ $(document).ready(() => {
     });*/
 });
 function changeImage(newSrc) {
-  const image = document.getElementsByClassName("imagist");
-  image.style.filter = "brightness(0%)";
-  setTimeout(() => {
+  const image = document.querySelector(".modal-body .imagist");
+  if (image) {
     image.src = newSrc;
-    image.style.filter = "brightness(100%)";
-  }, 300); // Adjust the timeout to match the transition duration
+  }
 }
 
 // ===== Scroll to Top ====
@@ -42,3 +40,17 @@ $("#return-to-top").click(function () {
     500
   );
 });
+
+/*$(document).ready(() => {
+  // This event is triggered when the modal is about to be shown
+  $("#enlargeXystinyfindModal").on("show.bs.modal", function () {
+    // Hide the original content when the modal is shown
+    $(".card.presenter").addClass("d-none");
+  });
+
+  // This event is triggered when the modal has finished being hidden
+  $("#enlargeXystinyfindModal").on("hidden.bs.modal", function () {
+    // Show the original content when the modal is hidden
+    $(".card.presenter").removeClass("d-none");
+  });
+});*/

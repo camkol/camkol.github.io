@@ -142,6 +142,9 @@ figure {
 .presser {
   cursor: pointer;
 }
+.pressers {
+  cursor: pointer;
+}
 
 .hide {
   display: none;
@@ -197,7 +200,7 @@ canvas {
 .imagist {
   width: 100%;
   display: block;
-  transition: filter 1s ease;
+  transition: filter 0.3s ease;
   border-radius: 20px;
 }
 .imagist:hover {
@@ -282,7 +285,7 @@ canvas {
     .row {
       .presenter {
         max-width: 13.5rem;
-        .presser {
+        .pressers {
           .imager {
             height: 120px;
           }
