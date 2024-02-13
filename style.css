@@ -210,7 +210,7 @@ canvas {
 }
 
 .container .row .presenter {
-  width: 18rem;
+  max-width: 22.5rem;
 }
 
 #return-to-top {
@@ -246,6 +246,11 @@ canvas {
   top: 5px;
 }
 
+@media only screen and (max-width: 1026px) {
+  .container .row .presenter {
+    max-width: 18.5rem;
+  }
+}
 @media only screen and (max-width: 780px) {
   #mobile {
     display: block;
@@ -254,13 +259,20 @@ canvas {
     display: none;
   }
   .container .row .presenter {
-    width: 18rem;
+    max-width: 13.5rem;
   }
   .container .row .presenter .presser .imager {
     height: 120px;
   }
 }
 @media only screen and (min-width: 500px) {
+  .card.presenter {
+    transition: transform 0.3s ease-in-out; /* Add transition property for smooth effect */
+    margin: 10px;
+  }
+  .card.presenter:hover {
+    transform: scale(1.1); /* Increase the scale to 1.1 on hover (you can adjust the value) */
+  }
   #profilePic {
     border-radius: 50px;
   }
