@@ -1,3 +1,5 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
 @keyframes fadeInLeftToRight {
   from {
     opacity: 0;
@@ -208,8 +210,8 @@ canvas {
   display: none;
 }
 
-.container .row .presenter {
-  max-width: 22.5rem;
+.container #projectGrid .scrollport .card {
+  min-width: 20rem;
 }
 
 #return-to-top {
@@ -242,23 +244,34 @@ canvas {
   top: 5px;
 }
 
-@media only screen and (max-width: 1026px) {
-  .container .row .presenter {
-    max-width: 18.5rem;
-  }
+.scrollport {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  display: flex;
+  gap: var(--size-00);
+  align-items: start;
+  padding: var(--size-0);
 }
+
+.scrollport > .presenter {
+  block-size: var(--size-14);
+  aspect-ratio: var(--ratio-square);
+  background-color: var(--surface-2);
+  border-radius: var(--radius-3);
+  box-shadow: var(--shadow-4);
+}
+
+#projectGrid {
+  display: grid;
+  place-content: center;
+}
+
 @media only screen and (max-width: 780px) {
   #mobile {
     display: block;
   }
   #desktop {
     display: none;
-  }
-  .container .row .presenter {
-    max-width: 13.5rem;
-  }
-  .container .row .presenter .pressers .imager {
-    height: 120px;
   }
 }
 @media only screen and (min-width: 500px) {
@@ -280,32 +293,10 @@ canvas {
   #titleLabel div .imgIcon {
     margin-bottom: 5px;
   }
+  .container #projectGrid .scrollport .card {
+    min-width: 15rem;
+  }
   iframe {
     width: 100%;
-  }
-  .container .row .presenter {
-    width: 100%;
-    max-width: none;
-  }
-  .container .row .presenter .presser .imager {
-    height: auto;
-  }
-  .container .row .presenter .presser .imager #colmarAcademy {
-    margin-top: 0;
-  }
-  .container .row .presenter .presser .imager #xysTinyFind {
-    margin-top: 0;
-  }
-  .container .row .presenter .presser .imager #memeGenerator {
-    margin-top: 0;
-  }
-  .container .row .presenter .presser .imager #museumOfSweets {
-    margin-top: 0;
-  }
-  .container .row .presenter .presser .imager #scoreKeeper {
-    margin-top: 0;
-  }
-  .container .row .presenter .presser .imager #soleShoes {
-    margin-top: 0;
   }
 }/*# sourceMappingURL=style.css.map */

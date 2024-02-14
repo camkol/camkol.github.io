@@ -76,3 +76,4 @@
 - testing enlargemnt on xyline
 - everything worked with enlargement
 - fixed reponsive
+- installed horizontal slider to projects section

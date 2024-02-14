@@ -197,9 +197,11 @@ canvas {
   display: none;
 }
 .container {
-  .row {
-    .presenter {
-      max-width: 22.5rem;
+  #projectGrid {
+    .scrollport {
+      .card {
+        min-width: 20rem;
+      }
     }
   }
 }
@@ -232,14 +234,36 @@ canvas {
     }
   }
 }
+
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+.scrollport {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+
+  display: flex;
+  gap: var(--size-00);
+  align-items: start;
+  padding: var(--size-0);
+}
+
+.scrollport > .presenter {
+  block-size: var(--size-14);
+  aspect-ratio: var(--ratio-square);
+  background-color: var(--surface-2);
+  border-radius: var(--radius-3);
+  box-shadow: var(--shadow-4);
+}
+
+#projectGrid {
+  display: grid;
+  place-content: center;
+}
+.spacer {
+}
+
 @media only screen and (max-width: 1026px) {
-  .container {
-    .row {
-      .presenter {
-        max-width: 18.5rem;
-      }
-    }
-  }
 }
 @media only screen and (max-width: 780px) {
   #mobile {
@@ -247,18 +271,6 @@ canvas {
   }
   #desktop {
     display: none;
-  }
-  .container {
-    .row {
-      .presenter {
-        max-width: 13.5rem;
-        .pressers {
-          .imager {
-            height: 120px;
-          }
-        }
-      }
-    }
   }
 }
 @media only screen and (min-width: 500px) {
@@ -269,6 +281,7 @@ canvas {
       transform: scale(1.1);
     }
   }
+
   #profilePic {
     border-radius: 50px;
   }
@@ -284,38 +297,16 @@ canvas {
       }
     }
   }
-  iframe {
-    width: 100%;
-  }
   .container {
-    .row {
-      .presenter {
-        width: 100%;
-        max-width: none;
-        .presser {
-          .imager {
-            height: auto;
-            #colmarAcademy {
-              margin-top: 0;
-            }
-            #xysTinyFind {
-              margin-top: 0;
-            }
-            #memeGenerator {
-              margin-top: 0;
-            }
-            #museumOfSweets {
-              margin-top: 0;
-            }
-            #scoreKeeper {
-              margin-top: 0;
-            }
-            #soleShoes {
-              margin-top: 0;
-            }
-          }
+    #projectGrid {
+      .scrollport {
+        .card {
+          min-width: 15rem;
         }
       }
     }
+  }
+  iframe {
+    width: 100%;
   }
 }
