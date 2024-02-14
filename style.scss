@@ -1,9 +1,13 @@
 $color_1: #ffffff;
 $color_2: #fff;
 $color_3: #fbd1d5;
-$color_4: #2a70e0;
-
 $font-family_1: Roboto, sans-serif;
+$font-family_2: "Macondo", cursive;
+$background-color_1: #d3d3d3;
+$background-color_2: #ffffff;
+$background-color_3: #fbd1d5;
+$background-color_4: #2a70e0;
+
 @keyframes fadeInLeftToRight {
   from {
     opacity: 0;
@@ -22,27 +26,24 @@ $font-family_1: Roboto, sans-serif;
     transform: translateX(0);
   }
 }
-
+/*# sourceMappingURL=style.css.map */
 .roll-out-text {
   animation: rollOut 1s ease-out;
 }
-
 .fade-in-left-to-right {
   animation: fadeInLeftToRight 3s ease-out;
 }
-
-.imgIcon:nth-child(1) {
-  animation-delay: 1s;
+.imgIcon {
+  &:nth-child(1) {
+    animation-delay: 1s;
+  }
+  &:nth-child(2) {
+    animation-delay: 2s;
+  }
 }
-
-.imgIcon:nth-child(2) {
-  animation-delay: 2s;
-}
-
 body {
   font-family: $font-family_1;
-  //background-image: url("https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png");
-  background-color: #d3d3d3;
+  background-color: $background-color_1;
 }
 header {
   padding: 20px 0;
@@ -52,12 +53,12 @@ header {
   }
 }
 footer {
+  font-size: 12px;
+  padding: 20px 0;
   .row {
     display: flex;
     align-items: center;
   }
-  font-size: 12px;
-  padding: 20px 0;
   .col-sm-8 {
     display: flex;
     justify-content: flex-end;
@@ -97,10 +98,9 @@ a {
   }
 }
 .titles {
-  font-family: "Macondo", cursive;
+  font-family: $font-family_2;
   font-size: 2rem;
 }
-
 .col-md-6 {
   margin: 0 0 30px;
 }
@@ -108,24 +108,23 @@ a {
   border-radius: 2px;
   border: 0px;
   color: $color_3;
-  background-color: $color_1;
+  background-color: $background-color_2;
   &:hover {
     color: $color_1;
-    background-color: $color_3;
+    background-color: $background-color_3;
   }
 }
 .btn-secondary {
-  background-color: $color_4;
+  background-color: $background-color_4;
   color: $color_1;
   margin: 0 0 30px;
 }
-
 figure {
+  margin-bottom: 30px;
   img {
     width: 100%;
     height: auto;
   }
-  margin-bottom: 30px;
 }
 .imageHolder {
   height: 160px;
@@ -138,38 +137,27 @@ figure {
 .views {
   display: none;
 }
-
 .presser {
   cursor: pointer;
 }
-
 .hide {
   display: none;
 }
-
 .javascript {
-  background: linear-gradient(
-    rgba(251, 255, 4, 0.2),
-    (rgba(247, 248, 170, 0.2))
-  );
+  background: linear-gradient(rgba(251, 255, 4, 0.2), rgba(247, 248, 170, 0.2));
 }
 .sass {
-  background: linear-gradient(
-    rgba(239, 6, 247, 0.2),
-    (rgba(252, 168, 245, 0.2))
-  );
+  background: linear-gradient(rgba(239, 6, 247, 0.2), rgba(252, 168, 245, 0.2));
 }
 .htmlCss {
   background: linear-gradient(
     rgba(24, 132, 255, 0.2),
-    (rgba(142, 194, 253, 0.2))
+    rgba(142, 194, 253, 0.2)
   );
-  //background: linear-gradient(rgba(253, 69, 13, 0.2), (rgba(33, 30, 248, 0.2)));
 }
 .bootstrap {
   background: linear-gradient(rgba(111, 0, 255, 0.2), rgba(109, 49, 248, 0.2));
 }
-
 .logo {
   margin: 2%;
   img {
@@ -181,8 +169,6 @@ canvas {
   display: block;
   margin-left: auto;
   margin-right: auto;
-}
-.javacon {
 }
 .logo2 {
   img {
@@ -199,19 +185,17 @@ canvas {
   display: block;
   transition: filter 0.3s ease;
   border-radius: 20px;
-}
-.imagist:hover {
-  filter: brightness(70%);
+  &:hover {
+    filter: brightness(70%);
+  }
 }
 .imager {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
 #mobile {
   display: none;
 }
-
 .container {
   .row {
     .presenter {
@@ -219,7 +203,6 @@ canvas {
     }
   }
 }
-
 #return-to-top {
   position: fixed;
   bottom: 20px;
@@ -230,42 +213,25 @@ canvas {
   height: 50px;
   display: block;
   text-decoration: none;
-  -webkit-border-radius: 35px;
-  -moz-border-radius: 35px;
   border-radius: 35px;
   display: none;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
-}
-#return-to-top i {
-  color: #fff;
-  margin: 0;
-  position: relative;
-  //left: 16px;
-  top: 13px;
-  font-size: 19px;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-}
-#return-to-top:hover {
-  background: rgba(0, 0, 0, 0.9);
-}
-#return-to-top:hover i {
-  color: #fff;
-  top: 5px;
-}
-
-.modal-header {
-  .close {
+  i {
+    color: $color_2;
+    margin: 0;
+    position: relative;
+    top: 13px;
+    font-size: 19px;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    background: rgba(0, 0, 0, 0.9);
+    i {
+      color: $color_2;
+      top: 5px;
+    }
   }
 }
-
 @media only screen and (max-width: 1026px) {
   .container {
     .row {
@@ -275,7 +241,6 @@ canvas {
     }
   }
 }
-
 @media only screen and (max-width: 780px) {
   #mobile {
     display: block;
@@ -296,25 +261,12 @@ canvas {
     }
   }
 }
-
 @media only screen and (min-width: 500px) {
   .card.presenter {
-    transition: transform 0.3s ease-in-out; /* Add transition property for smooth effect */
+    transition: transform 0.3s ease-in-out;
     margin: 10px;
-  }
-
-  .card.presenter:hover {
-    transform: scale(
-      1.1
-    ); /* Increase the scale to 1.1 on hover (you can adjust the value) */
-  }
-  #experience {
-    .card-header {
-      //height: 300px;
-      img {
-        //height: 100%;
-        //width: auto;
-      }
+    &:hover {
+      transform: scale(1.1);
     }
   }
   #profilePic {

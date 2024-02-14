@@ -16,6 +16,7 @@
     transform: translateX(0);
   }
 }
+
 .roll-out-text {
   animation: rollOut 1s ease-out;
 }
@@ -27,7 +28,6 @@
 .imgIcon:nth-child(1) {
   animation-delay: 1s;
 }
-
 .imgIcon:nth-child(2) {
   animation-delay: 2s;
 }
@@ -195,7 +195,6 @@ canvas {
   transition: filter 0.3s ease;
   border-radius: 20px;
 }
-
 .imagist:hover {
   filter: brightness(70%);
 }
@@ -227,7 +226,6 @@ canvas {
   display: none;
   transition: all 0.3s ease;
 }
-
 #return-to-top i {
   color: #fff;
   margin: 0;
@@ -236,11 +234,9 @@ canvas {
   font-size: 19px;
   transition: all 0.3s ease;
 }
-
 #return-to-top:hover {
   background: rgba(0, 0, 0, 0.9);
 }
-
 #return-to-top:hover i {
   color: #fff;
   top: 5px;
@@ -267,11 +263,11 @@ canvas {
 }
 @media only screen and (min-width: 500px) {
   .card.presenter {
-    transition: transform 0.3s ease-in-out; /* Add transition property for smooth effect */
+    transition: transform 0.3s ease-in-out;
     margin: 10px;
   }
   .card.presenter:hover {
-    transform: scale(1.1); /* Increase the scale to 1.1 on hover (you can adjust the value) */
+    transform: scale(1.1);
   }
   #profilePic {
     border-radius: 50px;
