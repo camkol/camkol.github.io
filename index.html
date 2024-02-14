@@ -163,7 +163,7 @@
           data-toggle="modal"
           data-target="#enlargeXystinyfindModal"
         >
-          <div class="card-body pressers">
+          <div class="card-body presser">
             <div class="imager" id="xysTinyFind">
               <img
                 class="imagist"
@@ -201,7 +201,7 @@
                 />
                 <button
                   type="button"
-                  class="close"
+                  class="btn-close"
                   data-dismiss="modal"
                   aria-label="Close"
                 >
@@ -228,7 +228,7 @@
                   >
                 </h4>
                 <hr />
-                <h4>Enhanced Process</h4>
+                <h4>Process</h4>
                 <ul>
                   <li>
                     I undertook the development for a close friend's company.
@@ -273,7 +273,11 @@
           </div>
         </div>
 
-        <div class="card presenter col-md-4 col-xs-1">
+        <div
+          class="card presenter col-md-4 col-xs-1"
+          data-toggle="modal"
+          data-target="#enlargeChrisModal"
+        >
           <div class="card-body presser">
             <div class="imager" id="chris">
               <img
@@ -289,57 +293,94 @@
             <h5 class="card-title">Chris the Producer</h5>
             <h6 class="card-subtitle mb-2 text-muted">HTML | CSS | SASS</h6>
           </div>
-
-          <div class="card-body views">
-            <h5>
-              <a
-                href="https://github.com/camkol/Chris.git"
-                class="card-link"
-                target="_blank"
-                >GitHub</a
-              >
-            </h5>
-            <hr />
-            <h4>
-              <a
-                href="https://camkol.github.io/Chris/"
-                class="card-link"
-                target="_blank"
-                >View Page</a
-              >
-            </h4>
-            <hr />
-            <h4>Process</h4>
-            <ul>
-              <li>
-                Developed an HTML structure and styling with CSS to create a
-                personalized webpage for a music producer friend.
-              </li>
-              <li>
-                Tailored the appearance of the header, producer-info section,
-                and footer to meet the client's preferences. Applied
-                comprehensive styles to achieve the desired layout, colors, and
-                fonts throughout the webpage.
-              </li>
-              <li>
-                Addressed the client's preference for the "Rubik Glitch Pop"
-                font, enhancing the overall aesthetic of the webpage.
-                Implemented text-shadow to create a distinctive glowing effect
-                on the header text as per the client's specific request.
-              </li>
-              <li>
-                Integrated Font Awesome icons for social media platforms
-                (Facebook, Twitter, Instagram, SoundCloud) with custom styling.
-              </li>
-              <li>
-                Incorporated Font Awesome effects, adjusted styles according to
-                the client's feedback, and changed the font to meet the client's
-                specific desire for a glowing effect.
-              </li>
-            </ul>
+        </div>
+        <!-- Modal for Chris the Producer Image -->
+        <div
+          class="modal fade"
+          id="enlargeChrisModal"
+          tabindex="-1"
+          aria-labelledby="enlargeChrisModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <img
+                  src="images/projects/chris-site.JPG"
+                  alt=""
+                  style="width: 100%"
+                />
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- Customized content goes here -->
+                <h5>
+                  <a
+                    href="https://github.com/camkol/Chris.git"
+                    class="card-link"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </h5>
+                <hr />
+                <h4>
+                  <a
+                    href="https://camkol.github.io/Chris/"
+                    class="card-link"
+                    target="_blank"
+                    >View Page</a
+                  >
+                </h4>
+                <hr />
+                <h4>Process</h4>
+                <ul>
+                  <li>
+                    Developed an HTML structure and styling with CSS to create a
+                    personalized webpage for a music producer friend.
+                  </li>
+                  <li>
+                    Tailored the appearance of the header, producer-info
+                    section, and footer to meet the client's preferences.
+                    Applied comprehensive styles to achieve the desired layout,
+                    colors, and fonts throughout the webpage.
+                  </li>
+                  <li>
+                    Addressed the client's preference for the "Rubik Glitch Pop"
+                    font, enhancing the overall aesthetic of the webpage.
+                    Implemented text-shadow to create a distinctive glowing
+                    effect on the header text as per the client's specific
+                    request.
+                  </li>
+                  <li>
+                    Integrated Font Awesome icons for social media platforms
+                    (Facebook, Twitter, Instagram, SoundCloud) with custom
+                    styling.
+                  </li>
+                  <li>
+                    Incorporated Font Awesome effects, adjusted styles according
+                    to the client's feedback, and changed the font to meet the
+                    client's specific desire for a glowing effect.
+                  </li>
+                </ul>
+                <!-- End of customized content -->
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card presenter col-md-4 col-xs-1">
+
+        <!-- Project: Dragon Repeller -->
+        <div
+          class="card presenter col-md-4 col-xs-1"
+          data-toggle="modal"
+          data-target="#enlargeDragonModal"
+        >
           <div class="card-body presser">
             <div class="imager" id="dragon">
               <img
@@ -357,61 +398,97 @@
               JavaScript | HTML | CSS
             </h6>
           </div>
-
-          <div class="card-body views">
-            <h5>
-              <a
-                href="https://github.com/camkol/DragonRepeller.git"
-                class="card-link"
-                target="_blank"
-                >GitHub</a
-              >
-            </h5>
-            <hr />
-            <h4>
-              <a
-                href="https://camkol.github.io/DragonRepeller/"
-                class="card-link"
-                target="_blank"
-                >View Page</a
-              >
-            </h4>
-            <hr />
-            <h4>Process</h4>
-            <ul>
-              <li>
-                Player stats such as experience points (xp), health, gold,
-                current weapon, and inventory are initialized. HTML elements and
-                buttons are linked to JavaScript variables for interaction.
-              </li>
-              <li>
-                The game defines various locations, monsters, weapons, and
-                actions using arrays and objects. Buttons are assigned onclick
-                functions corresponding to different in-game actions, such as
-                going to locations, buying/selling items, and fighting monsters.
-              </li>
-              <li>
-                Combat involves attacking, dodging, and calculating damage based
-                on the player's weapon and the monster's level. Outcomes are
-                processed, including gaining or losing gold and xp, defeating
-                monsters, and determining victory or defeat.
-              </li>
-              <li>
-                The game includes special events like an easter egg with a
-                number-picking game. Restart and replay options are available
-                upon winning or losing the game.
-              </li>
-              <li>
-                The game features localization to create a German version for
-                your son. Text elements, button labels, and in-game messages are
-                translated to German, allowing your son to enjoy the game in his
-                native language.
-              </li>
-            </ul>
+        </div>
+        <!-- Modal for Dragon Repeller Image -->
+        <div
+          class="modal fade"
+          id="enlargeDragonModal"
+          tabindex="-1"
+          aria-labelledby="enlargeDragonModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <img
+                  src="images/projects/dragon-site.JPG"
+                  alt=""
+                  style="width: 100%"
+                />
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- Customized content goes here -->
+                <h5>
+                  <a
+                    href="https://github.com/camkol/DragonRepeller.git"
+                    class="card-link"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </h5>
+                <hr />
+                <h4>
+                  <a
+                    href="https://camkol.github.io/DragonRepeller/"
+                    class="card-link"
+                    target="_blank"
+                    >View Page</a
+                  >
+                </h4>
+                <hr />
+                <h4>Process</h4>
+                <ul>
+                  <li>
+                    Player stats such as experience points (xp), health, gold,
+                    current weapon, and inventory are initialized. HTML elements
+                    and buttons are linked to JavaScript variables for
+                    interaction.
+                  </li>
+                  <li>
+                    The game defines various locations, monsters, weapons, and
+                    actions using arrays and objects. Buttons are assigned
+                    onclick functions corresponding to different in-game
+                    actions, such as going to locations, buying/selling items,
+                    and fighting monsters.
+                  </li>
+                  <li>
+                    Combat involves attacking, dodging, and calculating damage
+                    based on the player's weapon and the monster's level.
+                    Outcomes are processed, including gaining or losing gold and
+                    xp, defeating monsters, and determining victory or defeat.
+                  </li>
+                  <li>
+                    The game includes special events like an easter egg with a
+                    number-picking game. Restart and replay options are
+                    available upon winning or losing the game.
+                  </li>
+                  <li>
+                    The game features localization to create a German version
+                    for your son. Text elements, button labels, and in-game
+                    messages are translated to German, allowing your son to
+                    enjoy the game in his native language.
+                  </li>
+                </ul>
+                <!-- End of customized content -->
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="card presenter col-md-4 col-xs-1">
+        <!-- Project: MEME Generator -->
+        <div
+          class="card presenter col-md-4 col-xs-1"
+          data-toggle="modal"
+          data-target="#enlargeMemeGeneratorModal"
+        >
           <div class="card-body presser">
             <div class="imager" id="memeGenerator">
               <img
@@ -429,52 +506,86 @@
               JavaScript | HTML | CSS
             </h6>
           </div>
-
-          <div class="card-body views">
-            <h5>
-              <a
-                href="https://github.com/camkol/MEME-generator.git"
-                class="card-link"
-                target="_blank"
-                >GitHub</a
-              >
-            </h5>
-            <hr />
-            <h4>
-              <a
-                href="https://camkol.github.io/MEME-generator/"
-                class="card-link"
-                target="_blank"
-                >View Page</a
-              >
-            </h4>
-            <hr />
-            <h4>Process</h4>
-            <ul>
-              <li>
-                This code along aims to demystify API usage by building a
-                straightforward meme generator.
-              </li>
-
-              <li>
-                Utilized document.querySelector to efficiently select DOM
-                elements.
-              </li>
-              <li>
-                Defined a function (updateDetails) responsible for updating meme
-                details based on the API response.
-              </li>
-
-              <li>Leveraged the fetch API to make asynchronous requests.</li>
-              <li>
-                Processed the JSON response to dynamically update meme details
-                on the web page.
-              </li>
-            </ul>
+        </div>
+        <!-- Modal for MEME Generator Image -->
+        <div
+          class="modal fade"
+          id="enlargeMemeGeneratorModal"
+          tabindex="-1"
+          aria-labelledby="enlargeMemeGeneratorModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <img
+                  src="images/projects/meme-site.JPG"
+                  alt=""
+                  style="width: 100%"
+                />
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- Customized content goes here -->
+                <h5>
+                  <a
+                    href="https://github.com/camkol/MEME-generator.git"
+                    class="card-link"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </h5>
+                <hr />
+                <h4>
+                  <a
+                    href="https://camkol.github.io/MEME-generator/"
+                    class="card-link"
+                    target="_blank"
+                    >View Page</a
+                  >
+                </h4>
+                <hr />
+                <h4>Process</h4>
+                <ul>
+                  <li>
+                    This code along aims to demystify API usage by building a
+                    straightforward meme generator.
+                  </li>
+                  <li>
+                    Utilized document.querySelector to efficiently select DOM
+                    elements.
+                  </li>
+                  <li>
+                    Defined a function (updateDetails) responsible for updating
+                    meme details based on the API response.
+                  </li>
+                  <li>
+                    Leveraged the fetch API to make asynchronous requests.
+                  </li>
+                  <li>
+                    Processed the JSON response to dynamically update meme
+                    details on the web page.
+                  </li>
+                </ul>
+                <!-- End of customized content -->
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="card presenter col-md-4 col-xs-1">
+        <!-- Project: Sole Shoes -->
+        <div
+          class="card presenter col-md-4 col-xs-1"
+          data-toggle="modal"
+          data-target="#enlargeSoleShoesModal"
+        >
           <div class="card-body presser">
             <div class="imager" id="soleShoes">
               <img
@@ -492,112 +603,168 @@
               JavaScript | jQuery | HTML | CSS
             </h6>
           </div>
-
-          <div class="card-body views">
-            <h5>
-              <a
-                href="https://github.com/camkol/SoleShoes.git"
-                class="card-link"
-                target="_blank"
-                >GitHub</a
-              >
-            </h5>
-            <hr />
-            <h4>
-              <a
-                href="https://camkol.github.io/SoleShoes/"
-                class="card-link"
-                target="_blank"
-                >View Page</a
-              >
-            </h4>
-            <hr />
-            <h4>Process</h4>
-            <ul>
-              <li>jQuery used for simple interactions.</li>
-              <li>
-                Hidden navigation menu with dropdown options. Hidden login form
-                that slides down when the login button is clicked.
-              </li>
-              <li>
-                Hidden login form that slides down when the login button is
-                clicked.
-              </li>
-
-              <li>Responsive design for different screen sizes.</li>
-
-              <li>
-                Media queries used to adjust button sizes and fonts for
-                different screen widths.
-              </li>
-              <li>
-                This process creates a visually appealing and interactive
-                website, showcasing products and providing user-friendly
-                navigation.
-              </li>
-            </ul>
-          </div>
         </div>
-        <div class="card presenter col-md-4 col-xs-1">
-          <div class="card-body presser">
-            <div class="imager" id="colmarAcademy">
-              <div>
+        <!-- Modal for Sole Shoes Image -->
+        <div
+          class="modal fade"
+          id="enlargeSoleShoesModal"
+          tabindex="-1"
+          aria-labelledby="enlargeSoleShoesModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
                 <img
-                  class="imagist"
-                  src="images/projects/colmaracademy.jpg"
+                  src="images/projects/soleshoes-site.JPG"
                   alt=""
-                  onmouseover="this.src='images/projects/colmaracademy-site.JPG';"
-                  onmouseout="this.src='images/projects/colmaracademy.jpg';"
+                  style="width: 100%"
                 />
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- Customized content goes here -->
+                <h5>
+                  <a
+                    href="https://github.com/camkol/SoleShoes.git"
+                    class="card-link"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </h5>
+                <hr />
+                <h4>
+                  <a
+                    href="https://camkol.github.io/SoleShoes/"
+                    class="card-link"
+                    target="_blank"
+                    >View Page</a
+                  >
+                </h4>
+                <hr />
+                <h4>Process</h4>
+                <ul>
+                  <li>jQuery used for simple interactions.</li>
+                  <li>
+                    Hidden navigation menu with dropdown options. Hidden login
+                    form that slides down when the login button is clicked.
+                  </li>
+                  <li>Responsive design for different screen sizes.</li>
+                  <li>
+                    Media queries used to adjust button sizes and fonts for
+                    different screen widths.
+                  </li>
+                  <li>
+                    This process creates a visually appealing and interactive
+                    website, showcasing products and providing user-friendly
+                    navigation.
+                  </li>
+                </ul>
+                <!-- End of customized content -->
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- Project: Colmar Academy -->
+        <div
+          class="card presenter col-md-4 col-xs-1"
+          data-toggle="modal"
+          data-target="#enlargeColmarAcademyModal"
+        >
+          <div class="card-body presser">
+            <div class="imager" id="colmarAcademy">
+              <img
+                class="imagist"
+                src="images/projects/colmaracademy.jpg"
+                alt=""
+                onmouseover="this.src='images/projects/colmaracademy-site.JPG';"
+                onmouseout="this.src='images/projects/colmaracademy.jpg';"
+              />
+            </div>
+
             <hr />
             <h5 class="card-title">Colmar Academy</h5>
             <h6 class="card-subtitle mb-2 text-muted">HTML | CSS | SASS</h6>
           </div>
-          <div class="card-body views">
-            <h5>
-              <a
-                href="https://github.com/camkol/capstone_colmar_assets.git"
-                class="card-link"
-                target="_blank"
-                >GitHub</a
-              >
-            </h5>
-            <hr />
-            <h4>
-              <a
-                href="https://camkol.github.io/capstone_colmar_assets/"
-                class="card-link"
-                target="_blank"
-                >View Page</a
-              >
-            </h4>
-            <hr />
-            <h4>Process</h4>
-            <ul>
-              <li>This project served as my CSS capstone project.</li>
-
-              <li>
-                Introducing SASS into the mix, I found it beneficial for visual
-                structure.
-              </li>
-              <li>
-                Initially grappling with Flexbox, I decided to take a break and
-                reacquaint myself with it. This approach led to an improved
-                comprehension of grid layout techniques.
-              </li>
-
-              <li>
-                With the desktop view finalized, I delved into crafting a
-                responsive design.
-              </li>
-              <li>
-                Out of habit, and for reliable sourcing, I ensured that even
-                when provided with media links, I extracted photos and videos to
-                the project folder.
-              </li>
-            </ul>
+        </div>
+        <!-- Modal for Colmar Academy Image -->
+        <div
+          class="modal fade"
+          id="enlargeColmarAcademyModal"
+          tabindex="-1"
+          aria-labelledby="enlargeColmarAcademyModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <img
+                  src="images/projects/colmaracademy-site.JPG"
+                  alt=""
+                  style="width: 100%"
+                />
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- Customized content goes here -->
+                <h5>
+                  <a
+                    href="https://github.com/camkol/capstone_colmar_assets.git"
+                    class="card-link"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </h5>
+                <hr />
+                <h4>
+                  <a
+                    href="https://camkol.github.io/capstone_colmar_assets/"
+                    class="card-link"
+                    target="_blank"
+                    >View Page</a
+                  >
+                </h4>
+                <hr />
+                <h4>Process</h4>
+                <ul>
+                  <li>This project served as my CSS capstone project.</li>
+                  <li>
+                    Introducing SASS into the mix, I found it beneficial for
+                    visual structure.
+                  </li>
+                  <li>
+                    Initially grappling with Flexbox, I decided to take a break
+                    and reacquaint myself with it. This approach led to an
+                    improved comprehension of grid layout techniques.
+                  </li>
+                  <li>
+                    With the desktop view finalized, I delved into crafting a
+                    responsive design.
+                  </li>
+                  <li>
+                    Out of habit, and for reliable sourcing, I ensured that even
+                    when provided with media links, I extracted photos and
+                    videos to the project folder.
+                  </li>
+                </ul>
+                <!-- End of customized content -->
+              </div>
+            </div>
           </div>
         </div>
 

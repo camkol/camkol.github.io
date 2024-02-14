@@ -142,9 +142,6 @@ figure {
 .presser {
   cursor: pointer;
 }
-.pressers {
-  cursor: pointer;
-}
 
 .hide {
   display: none;
@@ -264,6 +261,11 @@ canvas {
   top: 5px;
 }
 
+.modal-header {
+  .close {
+  }
+}
+
 @media only screen and (max-width: 1026px) {
   .container {
     .row {
@@ -337,6 +339,7 @@ canvas {
     .row {
       .presenter {
         width: 100%;
+        max-width: none;
         .presser {
           .imager {
             height: auto;

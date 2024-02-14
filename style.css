@@ -147,10 +147,6 @@ figure img {
   cursor: pointer;
 }
 
-.pressers {
-  cursor: pointer;
-}
-
 .hide {
   display: none;
 }
@@ -293,6 +289,7 @@ canvas {
   }
   .container .row .presenter {
     width: 100%;
+    max-width: none;
   }
   .container .row .presenter .presser .imager {
     height: auto;

@@ -74,3 +74,5 @@
 - added smooth scrolling effect
 - improved project section with hovering effects
 - testing enlargemnt on xyline
+- everything worked with enlargement
+- fixed reponsive
