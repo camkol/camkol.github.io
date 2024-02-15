@@ -27,10 +27,17 @@
   animation: fadeInLeftToRight 3s ease-out;
 }
 
-.imgIcon:nth-child(1) {
+#imgIconHold {
+  flex-wrap: wrap;
+}
+#imgIconHold .imgIcon {
+  height: 3rem;
+  margin: 1rem;
+}
+#imgIconHold .imgIcon:nth-child(1) {
   animation-delay: 1s;
 }
-.imgIcon:nth-child(2) {
+#imgIconHold .imgIcon:nth-child(2) {
   animation-delay: 2s;
 }
 
@@ -81,7 +88,7 @@ a {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url("images/xeno-eclipse.jpg");
+  background-image: url("images/back2.jpg");
   background-size: cover;
   color: #ffffff;
   height: 400px;
@@ -252,7 +259,6 @@ canvas {
   align-items: start;
   padding: var(--size-0);
 }
-
 .scrollport > .presenter {
   block-size: var(--size-14);
   aspect-ratio: var(--ratio-square);
@@ -266,6 +272,14 @@ canvas {
   place-content: center;
 }
 
+/*video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 100%;
+}*/
 @media only screen and (max-width: 780px) {
   #mobile {
     display: block;

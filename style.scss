@@ -7,7 +7,10 @@ $background-color_1: #d3d3d3;
 $background-color_2: #ffffff;
 $background-color_3: #fbd1d5;
 $background-color_4: #2a70e0;
+$background-color_5: var(--surface-2);
 
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
 @keyframes fadeInLeftToRight {
   from {
     opacity: 0;
@@ -33,14 +36,20 @@ $background-color_4: #2a70e0;
 .fade-in-left-to-right {
   animation: fadeInLeftToRight 3s ease-out;
 }
-.imgIcon {
-  &:nth-child(1) {
-    animation-delay: 1s;
-  }
-  &:nth-child(2) {
-    animation-delay: 2s;
+#imgIconHold {
+  flex-wrap: wrap;
+  .imgIcon {
+    height: 3rem;
+    margin: 1rem;
+    &:nth-child(1) {
+      animation-delay: 1s;
+    }
+    &:nth-child(2) {
+      animation-delay: 2s;
+    }
   }
 }
+
 body {
   font-family: $font-family_1;
   background-color: $background-color_1;
@@ -82,7 +91,7 @@ a {
 .jumbotron {
   display: flex;
   align-items: center;
-  background-image: url("images/xeno-eclipse.jpg");
+  background-image: url("images/back2.jpg");
   background-size: cover;
   color: $color_1;
   height: 400px;
@@ -234,37 +243,34 @@ canvas {
     }
   }
 }
-
-@import "https://unpkg.com/open-props";
-@import "https://unpkg.com/open-props/normalize.min.css";
-
 .scrollport {
   overflow-x: auto;
   overscroll-behavior-x: contain;
-
   display: flex;
   gap: var(--size-00);
   align-items: start;
   padding: var(--size-0);
+  > .presenter {
+    block-size: var(--size-14);
+    aspect-ratio: var(--ratio-square);
+    background-color: $background-color_5;
+    border-radius: var(--radius-3);
+    box-shadow: var(--shadow-4);
+  }
 }
-
-.scrollport > .presenter {
-  block-size: var(--size-14);
-  aspect-ratio: var(--ratio-square);
-  background-color: var(--surface-2);
-  border-radius: var(--radius-3);
-  box-shadow: var(--shadow-4);
-}
-
 #projectGrid {
   display: grid;
   place-content: center;
 }
-.spacer {
-}
 
-@media only screen and (max-width: 1026px) {
-}
+/*video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 100%;
+}*/
 @media only screen and (max-width: 780px) {
   #mobile {
     display: block;
@@ -281,7 +287,6 @@ canvas {
       transform: scale(1.1);
     }
   }
-
   #profilePic {
     border-radius: 50px;
   }

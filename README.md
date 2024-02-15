@@ -77,3 +77,4 @@
 - everything worked with enlargement
 - fixed reponsive
 - installed horizontal slider to projects section
+- changed background with photoshop made picture
