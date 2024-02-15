@@ -262,7 +262,6 @@ canvas {
 .scrollport > .presenter {
   block-size: var(--size-14);
   aspect-ratio: var(--ratio-square);
-  background-color: var(--surface-2);
   border-radius: var(--radius-3);
   box-shadow: var(--shadow-4);
 }
