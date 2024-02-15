@@ -78,3 +78,4 @@
 - fixed reponsive
 - installed horizontal slider to projects section
 - changed background with photoshop made picture
+- fixed icons and improved responsiveness

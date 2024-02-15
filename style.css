@@ -304,13 +304,24 @@ canvas {
   }
 }
 @media only screen and (max-width: 490px) {
-  #titleLabel div .imgIcon {
+  .navbar {
+    display: inline-grid;
+  }
+  .navbar .jumbotron {
+    background-size: cover;
+    background-position: center;
+  }
+  .navbar .jumbotron #imgIconHold .imgIcon {
+    height: 2rem;
+    margin: 0.75rem;
+  }
+  .navbar #titleLabel div .imgIcon {
     margin-bottom: 5px;
   }
-  .container #projectGrid .scrollport .card {
+  .navbar .container #projectGrid .scrollport .card {
     min-width: 15rem;
   }
-  iframe {
+  .navbar iframe {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */
