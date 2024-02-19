@@ -3,11 +3,11 @@ $(document).ready(() => {
     $(event.currentTarget).siblings(".views").slideToggle();
   });
 
-  $(".menu-button").on("click", () => {
+  /* $(".menu-button").on("click", () => {
     $("#nav-dropdown").slideToggle("slow");
   });
 
-  /*$(".imagist")
+  $(".imagist")
     .on("mouseenter", (event) => {
       $(event.currentTarget).addClass("photo-active");
     })

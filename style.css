@@ -279,16 +279,17 @@ canvas {
   cursor: pointer;
 }
 
-.desktop .section-grid {
+.section-grid {
   display: grid;
   grid-template-columns: 1fr 2fr;
   height: 100vh;
 }
-.desktop .section-grid .left,
-.desktop .section-grid .right {
+
+.left,
+.right {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .grid-text {
@@ -300,8 +301,9 @@ canvas {
 }
 
 .grid-image {
-  position: fixed;
+  position: sticky;
   z-index: 100;
+  top: -10px;
 }
 .grid-image img {
   width: 200px;

@@ -281,20 +281,19 @@ canvas {
 }
 
 //section area
-.desktop {
-  .section-grid {
-    display: grid;
-    // Responsive, 1/3 - 2/3 split
-    grid-template-columns: 1fr 2fr;
-    height: 100vh;
-    .left,
-    .right {
-      // Center the elements in each column
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
+.section-grid {
+  display: grid;
+  // Responsive, 1/3 - 2/3 split
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+}
+
+.left,
+.right {
+  // Center the elements in each column
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .grid-text {
@@ -309,8 +308,9 @@ canvas {
 
 .grid-image {
   // keeps the image fixed on scroll
-  position: fixed;
+  position: sticky;
   z-index: 100;
+  top: -10px;
   img {
     width: 200px;
     display: block;
