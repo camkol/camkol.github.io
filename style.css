@@ -213,7 +213,7 @@ canvas {
   background-size: cover;
 }
 
-#mobile {
+.mobile {
   display: none;
 }
 
@@ -279,14 +279,6 @@ canvas {
   height: 400px;
   width: 100%;
 }*/
-@media only screen and (max-width: 780px) {
-  #mobile {
-    display: block;
-  }
-  #desktop {
-    display: none;
-  }
-}
 @media only screen and (min-width: 500px) {
   .card.presenter {
     transition: transform 0.3s ease-in-out;
@@ -303,6 +295,12 @@ canvas {
   }
 }
 @media only screen and (max-width: 490px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
   .navbar {
     display: inline-grid;
   }

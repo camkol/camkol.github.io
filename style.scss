@@ -1,6 +1,7 @@
 $color_1: #ffffff;
 $color_2: #fff;
 $color_3: #fbd1d5;
+
 $font-family_1: Roboto, sans-serif;
 $font-family_2: "Macondo", cursive;
 $background-color_1: #d3d3d3;
@@ -202,7 +203,7 @@ canvas {
   background-repeat: no-repeat;
   background-size: cover;
 }
-#mobile {
+.mobile {
   display: none;
 }
 .container {
@@ -271,13 +272,8 @@ canvas {
   height: 400px;
   width: 100%;
 }*/
+
 @media only screen and (max-width: 780px) {
-  #mobile {
-    display: block;
-  }
-  #desktop {
-    display: none;
-  }
 }
 @media only screen and (min-width: 500px) {
   .card.presenter {
@@ -295,6 +291,12 @@ canvas {
   }
 }
 @media only screen and (max-width: 490px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
   .navbar {
     display: inline-grid;
     .jumbotron {
