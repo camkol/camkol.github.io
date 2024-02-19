@@ -148,14 +148,6 @@ figure img {
   width: 100%;
 }
 
-.views {
-  display: none;
-}
-
-.presser {
-  cursor: pointer;
-}
-
 .hide {
   display: none;
 }
@@ -213,12 +205,12 @@ canvas {
   background-size: cover;
 }
 
-.mobile {
-  display: none;
-}
-
 .container #projectGrid .scrollport .card {
   min-width: 20rem;
+}
+
+.mobile {
+  display: none;
 }
 
 #return-to-top {
@@ -279,6 +271,80 @@ canvas {
   height: 400px;
   width: 100%;
 }*/
+.views {
+  display: none;
+}
+
+.presser {
+  cursor: pointer;
+}
+
+.desktop .section-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100vh;
+}
+.desktop .section-grid .left,
+.desktop .section-grid .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid-text {
+  padding: 1rem;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid-image {
+  position: fixed;
+  z-index: 100;
+}
+.grid-image img {
+  width: 200px;
+  display: block;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
+}
+@media (min-width: 700px) {
+  .grid-image img {
+    width: 400px;
+  }
+}
+@media (min-width: 1000px) {
+  .grid-image img {
+    width: 600px;
+  }
+}
+
+.image-1,
+.image-2,
+.image-3,
+.image-4,
+.image-5,
+.image-6 {
+  opacity: 0;
+}
+.image-1.active,
+.image-2.active,
+.image-3.active,
+.image-4.active,
+.image-5.active,
+.image-6.active {
+  animation: fadeIn 1000ms ease forwards;
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @media only screen and (min-width: 500px) {
   .card.presenter {
     transition: transform 0.3s ease-in-out;

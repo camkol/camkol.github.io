@@ -80,3 +80,4 @@
 - changed background with photoshop made picture
 - fixed icons and improved responsiveness
 - add certerficates
+- installing section slide to employment section
