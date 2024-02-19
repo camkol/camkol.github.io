@@ -372,21 +372,22 @@ canvas {
   .navbar {
     display: inline-grid;
   }
-  .navbar .jumbotron {
+  .jumbotron {
     background-size: cover;
     background-position: center;
   }
-  .navbar .jumbotron #imgIconHold .imgIcon {
+  #titleLabel #imgIconHold {
+    max-width: 100%;
+    margin-left: 0.05rem;
+  }
+  #titleLabel #imgIconHold .imgIcon {
     height: 2rem;
     margin: 0.75rem;
   }
-  .navbar #titleLabel div .imgIcon {
-    margin-bottom: 5px;
-  }
-  .navbar .container #projectGrid .scrollport .card {
+  #titleLabel .container #projectGrid .scrollport .card {
     min-width: 15rem;
   }
-  .navbar iframe {
+  #titleLabel iframe {
     width: 100%;
   }
 }/*# sourceMappingURL=style.css.map */

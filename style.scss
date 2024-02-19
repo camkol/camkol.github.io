@@ -376,22 +376,19 @@ canvas {
   }
   .navbar {
     display: inline-grid;
-    .jumbotron {
-      background-size: cover;
-      background-position: center;
-      #imgIconHold {
-        .imgIcon {
-          height: 2rem;
-          margin: 0.75rem;
-        }
-      }
-    }
+  }
+  .jumbotron {
+    background-size: cover;
+    background-position: center;
+  }
 
-    #titleLabel {
-      div {
-        .imgIcon {
-          margin-bottom: 5px;
-        }
+  #titleLabel {
+    #imgIconHold {
+      max-width: 100%;
+      margin-left: 0.05rem;
+      .imgIcon {
+        height: 2rem;
+        margin: 0.75rem;
       }
     }
     .container {
