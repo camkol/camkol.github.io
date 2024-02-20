@@ -83,3 +83,4 @@
 - installing section slide to employment section
 - slide failed and have to revisit
 - made a sticky instead
+- improved education with tab function

@@ -876,26 +876,40 @@
     <section class="container" id="education">
       <h2 class="titles">Education</h2>
 
-      <div class="row">
-        <div
-          class="col-lg-4 col-md-6 col-sm-12"
-          role="presentation"
-          id="codecademy"
-        >
-          <div class="card h-100">
-            <div class="imageHolder">
+      <section class="accordion">
+        <section class="accordion-tabs">
+          <button
+            class="accordion-tab accordion-active"
+            data-actab-group="0"
+            data-actab-id="0"
+          >
+            Codecademy
+          </button>
+          <button class="accordion-tab" data-actab-group="0" data-actab-id="1">
+            freeCodeCamp
+          </button>
+          <button class="accordion-tab" data-actab-group="0" data-actab-id="2">
+            udemy
+          </button>
+          <button class="accordion-tab" data-actab-group="0" data-actab-id="3">
+            ITT Tech
+          </button>
+        </section>
+        <section class="accordion-content">
+          <article
+            class="accordion-item accordion-active"
+            data-actab-group="0"
+            data-actab-id="0"
+            id="slotOne"
+          >
+            <h4 class="accordion-item__label">Codecademy</h4>
+            <div class="accordion-item__container">
               <img
                 class="card-img-top portrait"
                 src="images/education/Codecademy.svg.png"
                 alt="codecademy"
               />
-            </div>
-
-            <div class="card-header">
-              <!--<h3 class="font-weight-bold">Codecademy</h3>-->
               <p class="card-text">2022-Present</p>
-            </div>
-            <div class="card-body">
               <div id="react">
                 <h5 class="font-weight-bold presser">Learn React</h5>
                 <a
@@ -925,70 +939,70 @@
                 </ul>
               </div>
               <!--   <div id="frontEndReact">
-                <h5 class="font-weight-bold presser">
-                  Create a Front-End App with React
-                </h5> <a
-                href=""
-                target="_blank"
-                class="views"
-                >Certificate</a
-              >
-                <ol class="views">
-                  <li>Introduction to JavaScript and Building Apps</li>
-                  <ul>
-                    <li>JavaScript Introduction & React Overview</li>
-                    <li>Setting up a Web Development Environment</li>
-                  </ul>
-                  <li>JavaScript Functions, Arrays, and Loops</li>
-                  <ul>
-                    <li>Conditionals</li>
-                    <li>Functions</li>
-                    <li>Arrays</li>
-                    <li>Loops</li>
-                  </ul>
-                  <li>JavaScript Iterators, Objects, and Classes</li>
-                  <ul>
-                    <li>Iterators</li>
-                    <li>Objects</li>
-                    <li>Classes</li>
-                  </ul>
-                  <li>Modern JavaScript: Modules and Browser Compatibility</li>
-                  <ul>
-                    <li>ES6 Modules</li>
-                    <li>Browser Compatibility and Transpilation</li>
-                  </ul>
-                  <li>Introduction to React</li>
-
-                  <ul>
-                    <li>JSX</li>
-                    <li>React Components</li>
-                    <li>Ravenous: Part 1</li>
-                  </ul>
-                  <li>React: Components Interacting</li>
-                  <ul>
-                    <li>Components and Props</li>
-                    <li>Ravenous: Part 2</li>
-                  </ul>
-                  <li>React: Component State</li>
-                  <ul>
-                    <li>Hooks</li>
-                    <li>React Programming Patterns</li>
-                    <li>Ravenous: Part 3</li>
-                  </ul>
-                  <li>AJAX Requests and API Interactions</li>
-                  <ul>
-                    <li>HTTP Requests</li>
-                    <li>Ravenous: Part 4</li>
-                  </ul>
-                  <li>React Capstone</li>
-                  <ul>
-                    <li>React Styles</li>
-                    <li>Lifecycle Methods</li>
-                    <li>React Forms</li>
-                    <li>Jamming</li>
-                  </ul>
-                </ol>
-              </div>-->
+              <h5 class="font-weight-bold presser">
+                Create a Front-End App with React
+              </h5> <a
+              href=""
+              target="_blank"
+              class="views"
+              >Certificate</a
+            >
+              <ol class="views">
+                <li>Introduction to JavaScript and Building Apps</li>
+                <ul>
+                  <li>JavaScript Introduction & React Overview</li>
+                  <li>Setting up a Web Development Environment</li>
+                </ul>
+                <li>JavaScript Functions, Arrays, and Loops</li>
+                <ul>
+                  <li>Conditionals</li>
+                  <li>Functions</li>
+                  <li>Arrays</li>
+                  <li>Loops</li>
+                </ul>
+                <li>JavaScript Iterators, Objects, and Classes</li>
+                <ul>
+                  <li>Iterators</li>
+                  <li>Objects</li>
+                  <li>Classes</li>
+                </ul>
+                <li>Modern JavaScript: Modules and Browser Compatibility</li>
+                <ul>
+                  <li>ES6 Modules</li>
+                  <li>Browser Compatibility and Transpilation</li>
+                </ul>
+                <li>Introduction to React</li>
+  
+                <ul>
+                  <li>JSX</li>
+                  <li>React Components</li>
+                  <li>Ravenous: Part 1</li>
+                </ul>
+                <li>React: Components Interacting</li>
+                <ul>
+                  <li>Components and Props</li>
+                  <li>Ravenous: Part 2</li>
+                </ul>
+                <li>React: Component State</li>
+                <ul>
+                  <li>Hooks</li>
+                  <li>React Programming Patterns</li>
+                  <li>Ravenous: Part 3</li>
+                </ul>
+                <li>AJAX Requests and API Interactions</li>
+                <ul>
+                  <li>HTTP Requests</li>
+                  <li>Ravenous: Part 4</li>
+                </ul>
+                <li>React Capstone</li>
+                <ul>
+                  <li>React Styles</li>
+                  <li>Lifecycle Methods</li>
+                  <li>React Forms</li>
+                  <li>Jamming</li>
+                </ul>
+              </ol>
+            </div>-->
               <div id="node">
                 <h5 class="font-weight-bold presser">Learn Node.js</h5>
                 <a
@@ -1376,27 +1390,21 @@
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-        <div
-          class="col-lg-4 col-md-6 col-sm-12"
-          role="presentation"
-          id="freeCodeCamp"
-        >
-          <div class="card h-100">
-            <div class="imageHolder">
+          </article>
+          <article
+            class="accordion-item"
+            data-actab-group="0"
+            data-actab-id="1"
+            id="slotTwo"
+          >
+            <h4 class="accordion-item__label">freeCodeCamp</h4>
+            <div class="accordion-item__container">
               <img
                 class="card-img-top portrait"
                 src="images/education/FreeCodeCamp_logo.svg.png"
                 alt="freecodecamp"
               />
-            </div>
-
-            <div class="card-header">
-              <!--<h3 class="font-weight-bold">freeCodeCamp</h3>-->
               <p class="card-text">2023-Present</p>
-            </div>
-            <div class="card-body">
               <div id="JADS">
                 <h5 class="font-weight-bold presser">
                   JavaScript Algorithms and Data Structures
@@ -1433,23 +1441,21 @@
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12" role="presentation" id="udemy">
-          <div class="card h-100">
-            <div class="imageHolder">
+          </article>
+          <article
+            class="accordion-item"
+            data-actab-group="0"
+            data-actab-id="2"
+            id="slotThree"
+          >
+            <h4 class="accordion-item__label">udemy</h4>
+            <div class="accordion-item__container">
               <img
                 class="card-img-top portrait"
                 src="images/education/Udemy_logo.svg.png"
                 alt="udemy"
               />
-            </div>
-
-            <div class="card-header">
-              <!--<h3 class="font-weight-bold">Udemy</h3>-->
               <p class="card-text">2023-Present</p>
-            </div>
-            <div class="card-body">
               <div id="bootCamp">
                 <h5 class="font-weight-bold presser">
                   The Web Developer Bootcamp(in progress)
@@ -1469,46 +1475,44 @@
                   <li>Responsive Design</li>
 
                   <!-- 
-                <li>SemanticUI</li>
-                <li>NodeJS</li>
-                <li>NPM</li>
-                <li>ExpressJS</li>
-                <li>Templating</li>
-                <li>REST</li>
-                <li>SQL vs. NoSQL databases</li>
-                <li>MongoDB</li>
-                <li>Database Associations</li>
-                <li>Schema Design</li>
-                <li>Mongoose</li>
-                <li>Authentication From Scratch</li>
-                <li>Cookies & Sessions</li>
-                <li>Authorization</li>
-                <li>Common Security Issues - SQL Injection, XSS, etc.</li>
-                <li>Developer Best Practices</li>
-                <li>Deploying Apps</li>
-                <li>Cloud Databases</li>
-                <li>Image Upload and Storage</li>
-                <li>Maps and Geocoding</li>-->
+                  <li>SemanticUI</li>
+                  <li>NodeJS</li>
+                  <li>NPM</li>
+                  <li>ExpressJS</li>
+                  <li>Templating</li>
+                  <li>REST</li>
+                  <li>SQL vs. NoSQL databases</li>
+                  <li>MongoDB</li>
+                  <li>Database Associations</li>
+                  <li>Schema Design</li>
+                  <li>Mongoose</li>
+                  <li>Authentication From Scratch</li>
+                  <li>Cookies & Sessions</li>
+                  <li>Authorization</li>
+                  <li>Common Security Issues - SQL Injection, XSS, etc.</li>
+                  <li>Developer Best Practices</li>
+                  <li>Deploying Apps</li>
+                  <li>Cloud Databases</li>
+                  <li>Image Upload and Storage</li>
+                  <li>Maps and Geocoding</li>-->
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-sm-12" role="presentation" id="ITT">
-          <div class="card h-100">
-            <div class="imageHolder">
+          </article>
+          <article
+            class="accordion-item"
+            data-actab-group="0"
+            data-actab-id="3"
+            id="slotFour"
+          >
+            <h4 class="accordion-item__label">ITT Technical Institute</h4>
+            <div class="accordion-item__container">
               <img
                 class="card-img-top portrait"
                 src="images/education/ITTTech.png"
                 alt="ITT Tech"
               />
-            </div>
-
-            <div class="card-header">
-              <h3 class="font-weight-bold">ITT Technical Institute</h3>
               <p class="card-text">2002-2008</p>
-            </div>
-            <div class="card-body">
               <div id="CDAD">
                 <h4 class="font-weight-bold presser">
                   Computer Drafting and Design
@@ -1574,9 +1578,10 @@
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
+          </article>
+        </section>
+        <script src="tab.js"></script>
+      </section>
     </section>
     <hr />
     <section class="container" id="experience">
