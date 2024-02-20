@@ -84,3 +84,4 @@
 - slide failed and have to revisit
 - made a sticky instead
 - improved education with tab function
+- added node icon
