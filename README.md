@@ -85,3 +85,5 @@
 - made a sticky instead
 - improved education with tab function
 - added node icon
+- changed font on .titles
+- adjusted chevron

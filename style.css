@@ -104,8 +104,19 @@ a {
   color: #fff;
 }
 
+#projects .titles {
+  font-family: "Protest Revolution", sans-serif;
+}
+
+#education .titles {
+  font-family: "Permanent Marker", cursive;
+}
+
+#experience .titles {
+  font-family: "Anton", sans-serif;
+}
+
 .titles {
-  font-family: "Macondo", cursive;
   font-size: 2rem;
 }
 
@@ -232,6 +243,7 @@ canvas {
   margin: 0;
   position: relative;
   top: 13px;
+  right: 4px;
   font-size: 19px;
   transition: all 0.3s ease;
 }
