@@ -1,6 +1,8 @@
 $color_1: #ffffff;
 $color_2: #fff;
 $color_3: #fbd1d5;
+$color_4: #111;
+$color_5: #eee;
 
 $color_blue: #447fff;
 $color_blue__fade: rgba($color_blue, 0.1);
@@ -9,11 +11,15 @@ $color_cloud: #eaeaea;
 
 $font-family_1: Roboto, sans-serif;
 $font-family_2: "Macondo", cursive;
+$font-family_3: "Montserrat", sans-serif;
+
 $background-color_1: #d3d3d3;
 $background-color_2: #ffffff;
 $background-color_3: #fbd1d5;
 $background-color_4: #2a70e0;
 $background-color_5: var(--surface-2);
+$background-color_6: #eee;
+$background-color_7: #111;
 
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
@@ -636,4 +642,164 @@ canvas {
   height: 49px;
   position: absolute;
   top: -1px;
+}
+
+//===Marquee===
+
+@import "https://fonts.googleapis.com/css?family=Montserrat";
+/* .marquee-content:hover {
+  animation-play-state: paused;
+} */
+@keyframes scrolling {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(-1 * var(--marquee-element-width) * var(--marquee-elements))
+    );
+  }
+}
+
+:root {
+  --marquee-width: 100vw;
+  --marquee-height: 12vh;
+  --marquee-elements-displayed: 5;
+  --marquee-element-width: calc(
+    var(--marquee-width) / var(--marquee-elements-displayed)
+  );
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+#faceOfPort {
+  font-family: $font-family_3;
+  background-color: $background-color_6;
+  color: $color_4;
+  //height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.marquee {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  background-color: $background-color_7;
+  color: $color_5;
+  overflow: hidden;
+  position: relative;
+  &:before {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+    left: 0;
+    background: linear-gradient(to right, #111 0%, transparent 100%);
+  }
+  &:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+    right: 0;
+    background: linear-gradient(to left, #111 0%, transparent 100%);
+  }
+}
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+  li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    font-size: calc(var(--marquee-height) * 3 / 4);
+    white-space: nowrap;
+    img {
+      width: 100%;
+      border: 2px solid #eee;
+    }
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    --marquee-width: 100vw;
+    --marquee-height: 8vh;
+    --marquee-elements-displayed: 3;
+  }
+  .marquee {
+    &:before {
+      font-size: 12px;
+      width: 5rem;
+    }
+    &:after {
+      width: 5rem;
+    }
+  }
+}
+@media (min-width: 100px) {
+  #faceOfPort {
+    padding: 0;
+  }
+}
+
+//===Cool Title===
+
+#coolAssTitle {
+  font-size: 68px;
+  color: $color_1;
+
+  span.text {
+    padding: 0;
+    padding-right: 4px;
+    border-right: 2px solid $color_1;
+    animation: blink 0.75s infinite;
+  }
+
+  .blue {
+    color: #4480ff;
+  }
+  .green {
+    color: #4caf50;
+  }
+  .yellow {
+    color: #f4b400;
+  }
+  .red {
+    color: #f44336;
+  }
+}
+
+@keyframes blink {
+  from {
+    border: none;
+  }
+  to {
+    border-color: 2px solid $color_1;
+  }
+}
+@media screen and (max-width: 670px) {
+  h1 {
+    font-size: 40px;
+  }
+  img {
+    width: 75px;
+    height: 75px;
+  }
+}
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 32px;
+  }
+}
+
+#megaTop {
+  display: block;
+  padding: 64px 0;
 }
