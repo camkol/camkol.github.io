@@ -87,3 +87,4 @@
 - added node icon
 - changed font on .titles
 - adjusted chevron
+- added Title effect
