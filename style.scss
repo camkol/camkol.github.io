@@ -617,33 +617,6 @@ canvas {
   }
 }
 
-//==Title effect==
-.containerTitle {
-  font-size: 40px;
-  font-family: $font-family_1;
-  letter-spacing: 1.5px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 40px;
-  * {
-    display: inline-block;
-    overflow: hidden;
-    position: absolute;
-  }
-  @media (max-width: 400px) {
-    font-size: 30px;
-  }
-}
-.bar {
-  width: 3px;
-  height: 49px;
-  position: absolute;
-  top: -1px;
-}
-
 //===Marquee===
 
 @import "https://fonts.googleapis.com/css?family=Montserrat";
@@ -678,6 +651,8 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
+  //position: absolute;
+  //bottom: 350px;
 }
 .marquee {
   width: var(--marquee-width);
@@ -748,6 +723,12 @@ canvas {
     padding: 0;
   }
 }
+@media (min-width: 1441px) {
+  /*#faceOfPort {
+    position: relative;
+    bottom: 0;
+  }*/
+}
 
 //===Cool Title===
 
@@ -760,6 +741,7 @@ canvas {
     padding-right: 4px;
     border-right: 2px solid $color_1;
     animation: blink 0.75s infinite;
+    border-style: none;
   }
 
   .blue {
@@ -782,24 +764,24 @@ canvas {
   }
   to {
     border-color: 2px solid $color_1;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: 2px solid $color_1;
   }
 }
 @media screen and (max-width: 670px) {
-  h1 {
+  #coolAssTitle {
     font-size: 40px;
   }
-  img {
-    width: 75px;
-    height: 75px;
-  }
 }
-@media screen and (max-width: 400px) {
-  h1 {
+@media screen and (max-width: 500px) {
+  #coolAssTitle {
     font-size: 32px;
   }
 }
 
 #megaTop {
   display: block;
-  padding: 64px 0;
+  padding: 164px 0;
 }

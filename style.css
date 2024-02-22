@@ -563,35 +563,6 @@ canvas {
     width: 100%;
   }
 }
-.containerTitle {
-  font-size: 40px;
-  font-family: Roboto, sans-serif;
-  letter-spacing: 1.5px;
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 40px;
-}
-.containerTitle * {
-  display: inline-block;
-  overflow: hidden;
-  position: absolute;
-}
-@media (max-width: 400px) {
-  .containerTitle {
-    font-size: 30px;
-  }
-}
-
-.bar {
-  width: 3px;
-  height: 49px;
-  position: absolute;
-  top: -1px;
-}
-
 /* .marquee-content:hover {
   animation-play-state: paused;
 } */
@@ -691,6 +662,12 @@ canvas {
     padding: 0;
   }
 }
+@media (min-width: 1441px) {
+  /*#faceOfPort {
+    position: relative;
+    bottom: 0;
+  }*/
+}
 #coolAssTitle {
   font-size: 68px;
   color: #ffffff;
@@ -700,6 +677,7 @@ canvas {
   padding-right: 4px;
   border-right: 2px solid #ffffff;
   animation: blink 0.75s infinite;
+  border-style: none;
 }
 #coolAssTitle .blue {
   color: #4480ff;
@@ -720,23 +698,23 @@ canvas {
   }
   to {
     border-color: 2px solid #ffffff;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: 2px solid #ffffff;
   }
 }
 @media screen and (max-width: 670px) {
-  h1 {
+  #coolAssTitle {
     font-size: 40px;
   }
-  img {
-    width: 75px;
-    height: 75px;
-  }
 }
-@media screen and (max-width: 400px) {
-  h1 {
+@media screen and (max-width: 500px) {
+  #coolAssTitle {
     font-size: 32px;
   }
 }
 #megaTop {
   display: block;
-  padding: 64px 0;
+  padding: 164px 0;
 }/*# sourceMappingURL=style.css.map */

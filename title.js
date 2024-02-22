@@ -1,4 +1,4 @@
-const words = ["Frontend", "Web", "Junior", "Entry-Level"],
+const words = ["Frontend", "Web", "Junior", "New?"],
   colors = ["blue", "green", "yellow", "red"],
   text = document.querySelector(".text");
 
