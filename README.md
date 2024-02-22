@@ -88,3 +88,5 @@
 - changed font on .titles
 - adjusted chevron
 - added Title effect
+- added marquee for icons
+- installed incredile title function
