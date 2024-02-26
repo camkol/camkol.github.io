@@ -452,7 +452,6 @@ canvas {
   }
   .accordion-tabs .accordion-tab {
     background: rgba(68, 127, 255, 0.1);
-    padding: 1rem 2rem;
     font: inherit;
     flex: 1;
     border: none;

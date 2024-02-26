@@ -90,3 +90,4 @@
 - added Title effect
 - added marquee for icons
 - installed incredile title function
+- improved education section
