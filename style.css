@@ -181,9 +181,10 @@ figure img {
 }
 
 .logo {
-  margin: 2%;
+  display: flex;
 }
 .logo img {
+  margin: 2%;
   height: 60px;
   border-radius: 15%;
 }
@@ -520,7 +521,7 @@ canvas {
 }
 @media only screen and (max-width: 2560px) {
   .jumbotron {
-    background-position-y: -330px;
+    background-position-y: -200px;
   }
 }
 @media only screen and (max-width: 1440px) {
