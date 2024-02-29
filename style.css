@@ -270,6 +270,7 @@ canvas {
 .container #projectGrid {
   display: grid;
   place-content: center;
+  padding: 20;
 }
 .container #projectGrid .scrollport .card {
   min-width: 20rem;
@@ -535,7 +536,7 @@ canvas {
 @media only screen and (min-width: 500px) {
   .card.presenter {
     transition: transform 0.3s ease-in-out;
-    margin: 10px;
+    margin: 20px;
   }
   .card.presenter:hover {
     transform: scale(1.1);
