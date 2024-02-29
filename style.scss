@@ -226,16 +226,6 @@ canvas {
   background-size: cover;
 }
 
-.container {
-  #projectGrid {
-    .scrollport {
-      .card {
-        min-width: 20rem;
-      }
-    }
-  }
-}
-
 .mobile {
   display: none;
 }
@@ -287,9 +277,16 @@ canvas {
     box-shadow: var(--shadow-4);
   }
 }
-#projectGrid {
-  display: grid;
-  place-content: center;
+.container {
+  #projectGrid {
+    display: grid;
+    place-content: center;
+    .scrollport {
+      .card {
+        min-width: 20rem;
+      }
+    }
+  }
 }
 
 /*video {
@@ -561,7 +558,21 @@ canvas {
   }
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 2560px) {
+  .jumbotron {
+    background-position-y: -330px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .jumbotron {
+    background-position-y: -120px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .jumbotron {
+    background-position-y: -60px;
+  }
 }
 @media only screen and (min-width: 500px) {
   .card.presenter {

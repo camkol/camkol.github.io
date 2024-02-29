@@ -91,3 +91,4 @@
 - added marquee for icons
 - installed incredile title function
 - improved education section
+- adjusted background positioning
