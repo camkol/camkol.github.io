@@ -1,0 +1,130 @@
+$color_1: #ffffff;
+$color_2: #fff;
+$color_3: #fbd1d5;
+$color_4: #2a70e0;
+
+$font-family_1: Roboto, sans-serif;
+
+
+body {
+	font-family: $font-family_1;
+	background-image: url('https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png');
+}
+header {
+	padding: 20px 0;
+	.row {
+		display: flex;
+		align-items: center;
+	}
+}
+footer {
+	.row {
+		display: flex;
+		align-items: center;
+	}
+	font-size: 12px;
+	padding: 20px 0;
+	.col-sm-8 {
+		display: flex;
+		justify-content: flex-end;
+	}
+	ul {
+		list-style: none;
+	}
+}
+h1 {
+	font-weight: 700;
+	margin: 0;
+}
+nav {
+	display: flex;
+	justify-content: flex-end;
+}
+a {
+	padding: 0 20px;
+	margin: 0;
+}
+.jumbotron {
+	display: flex;
+	align-items: center;
+	background-image: url('https://content.codecademy.com/projects/personal_portfolio/background.jpeg');
+	background-size: cover;
+	color: $color_1;
+	height: 400px;
+	h2 {
+		font-size: 60px;
+		font-weight: 700;
+		margin: 0;
+		color: $color_2;
+	}
+	h3 {
+		margin: 0 0 20px;
+		color: $color_2;
+	}
+}
+section {
+	.row {
+		img {
+			margin: 0 0 30px;
+			width: 100%;
+		}
+	}
+}
+.col-md-6 {
+	margin: 0 0 30px;
+}
+.btn.btn-primary {
+	border-radius: 2px;
+	border: 0px;
+	color: $color_3;
+	background-color: $color_1;
+	&:hover {
+		color: $color_1;
+		background-color: $color_3;
+	}
+}
+.btn-secondary {
+	background-color: $color_4;
+	color: $color_1;
+	margin: 0 0 30px;
+}
+.portrait {
+	width: 350px;
+	height: 300px;
+}
+figure {
+	img {
+		width: 100%;
+		height: auto;
+	}
+	margin-bottom: 30px;
+}
+.views {
+	display: none;
+}
+
+.presser {
+	cursor: pointer;
+}
+.hide {
+	display: none;
+}
+.jquery {
+	background: linear-gradient(rgba(24, 132, 255, 0.2), (rgba(142, 194, 253, 0.2))); 
+}
+
+.javascript {
+	background: linear-gradient(rgba(251, 255, 4, 0.2), (rgba(247, 248, 170, 0.2))); 
+}
+.sass {
+	background: linear-gradient(rgba(239, 6, 247, 0.2), (rgba(252, 168, 245, 0.2))); 
+}
+
+.logo {
+	margin: 1%;
+	img {
+	width: 60px;
+	border-radius: 15%;	
+	}
+	
+}

@@ -1,0 +1,133 @@
+body {
+  font-family: Roboto, sans-serif;
+  background-image: url("https://content.codecademy.com/courses/learn-css-selectors-visual-rules/hypnotize_bg.png");
+}
+
+header {
+  padding: 20px 0;
+}
+header .row {
+  display: flex;
+  align-items: center;
+}
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+footer .row {
+  display: flex;
+  align-items: center;
+}
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+footer ul {
+  list-style: none;
+}
+
+h1 {
+  font-weight: 700;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  padding: 0 20px;
+  margin: 0;
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  background-image: url("https://content.codecademy.com/projects/personal_portfolio/background.jpeg");
+  background-size: cover;
+  color: #ffffff;
+  height: 400px;
+}
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #fbd1d5;
+  background-color: #ffffff;
+}
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  background-color: #2a70e0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+.portrait {
+  width: 350px;
+  height: 300px;
+}
+
+figure {
+  margin-bottom: 30px;
+}
+figure img {
+  width: 100%;
+  height: auto;
+}
+
+.views {
+  display: none;
+}
+
+.presser {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+.jquery {
+  background: linear-gradient(rgba(24, 132, 255, 0.2), rgba(142, 194, 253, 0.2));
+}
+
+.javascript {
+  background: linear-gradient(rgba(251, 255, 4, 0.2), rgba(247, 248, 170, 0.2));
+}
+
+.sass {
+  background: linear-gradient(rgba(239, 6, 247, 0.2), rgba(252, 168, 245, 0.2));
+}
+
+.logo {
+  margin: 1%;
+}
+.logo img {
+  width: 60px;
+  border-radius: 15%;
+}/*# sourceMappingURL=style.css.map */
