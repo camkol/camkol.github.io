@@ -92,3 +92,4 @@
 - installed incredile title function
 - improved education section
 - adjusted background positioning
+- added folder of first version of site
