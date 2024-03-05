@@ -79,6 +79,7 @@ h1 {
 nav {
   display: flex;
   justify-content: flex-end;
+  width: 100%;
 }
 
 a {
@@ -557,6 +558,12 @@ canvas {
   }
   .navbar {
     display: inline-grid;
+    justify-content: center;
+  }
+  .navbar a {
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
   .jumbotron {
     background-size: cover;
