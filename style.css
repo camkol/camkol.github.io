@@ -660,8 +660,9 @@ canvas {
   white-space: nowrap;
 }
 .marquee-content li img {
-  width: 100%;
-  border: 2px solid #eee;
+  height: 65%;
+  width: auto;
+  border: none;
 }
 
 @media (max-width: 600px) {

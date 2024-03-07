@@ -717,8 +717,9 @@ canvas {
     font-size: calc(var(--marquee-height) * 3 / 4);
     white-space: nowrap;
     img {
-      width: 100%;
-      border: 2px solid #eee;
+      height: 65%;
+      width: auto;
+      border: none;
     }
   }
 }

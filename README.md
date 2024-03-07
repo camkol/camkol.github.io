@@ -95,3 +95,5 @@
 - added folder of first version of site
 - installed new scroll for library
 - added mocha and testing to index
+- added visual studio icon
+- improved icon sizing
