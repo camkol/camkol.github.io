@@ -97,3 +97,4 @@
 - added mocha and testing to index
 - added visual studio icon
 - improved icon sizing
+- organized files
