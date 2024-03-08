@@ -164,20 +164,41 @@ figure img {
   display: none;
 }
 
-.javascript {
-  background: linear-gradient(rgba(251, 255, 4, 0.2), rgba(247, 248, 170, 0.2));
+.progStyle {
+  font-size: 0.75rem;
 }
-
-.sass {
-  background: linear-gradient(rgba(239, 6, 247, 0.2), rgba(252, 168, 245, 0.2));
+.progStyle span {
+  border-radius: 8px;
+  padding: 0.3rem;
+  margin: 0.15rem;
+  color: white;
 }
-
-.htmlCss {
-  background: linear-gradient(rgba(24, 132, 255, 0.2), rgba(142, 194, 253, 0.2));
+.progStyle .htmlSpan {
+  background: radial-gradient(ellipse farthest-corner at center center, #e44d26 0%, #f16529 70%);
 }
-
-.bootstrap {
-  background: linear-gradient(rgba(111, 0, 255, 0.2), rgba(109, 49, 248, 0.2));
+.progStyle .cssSpan {
+  background: radial-gradient(ellipse farthest-corner at center center, #264de4 0%, #2965f1 70%);
+}
+.progStyle .jsSpan {
+  background: radial-gradient(ellipse farthest-corner at center center, #dabe24 0%, #f0db4f 70%);
+}
+.progStyle .jqSpan {
+  background: radial-gradient(ellipse farthest-corner at center center, #0868ac 0%, #084672 70%);
+}
+.progStyle .bsSpan {
+  background: radial-gradient(ellipse farthest-corner at center center, #8f13fe 0%, #6a10f3 70%);
+}
+.progStyle .sassSpan {
+  background: radial-gradient(ellipse farthest-corner at center center, #cf649a 0%, #ec7bb5 70%);
+}
+.progStyle .bulmaSpan {
+  background: radial-gradient(ellipse farthest-corner at center center, #35efd2 0%, #00d1b2 70%);
+}
+.progStyle .psSpan {
+  background: radial-gradient(ellipse farthest-corner at center center, #00c8ff 0%, #001d26 70%);
+}
+.progStyle .dsSpan {
+  background: radial-gradient(ellipse farthest-corner at center center, #39a5cc 0%, #36687f 70%);
 }
 
 .logo {

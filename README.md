@@ -98,3 +98,4 @@
 - added visual studio icon
 - improved icon sizing
 - organized files
+- styled language, framework and tool tags
