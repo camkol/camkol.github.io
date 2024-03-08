@@ -99,3 +99,4 @@
 - improved icon sizing
 - organized files
 - styled language, framework and tool tags
+- added Animated Company Logo
