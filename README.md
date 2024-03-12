@@ -100,3 +100,4 @@
 - organized files
 - styled language, framework and tool tags
 - added Animated Company Logo
+- added Recipe Page
