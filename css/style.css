@@ -19,7 +19,18 @@
     transform: translateX(0);
   }
 }
-
+@keyframes blink {
+  from {
+    border: none;
+  }
+  to {
+    border-color: 2px solid #ffffff;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    border-right: 2px solid #ffffff;
+  }
+}
 .roll-out-text {
   animation: rollOut 1s ease-out;
 }
@@ -31,13 +42,16 @@
 #imgIconHold {
   flex-wrap: wrap;
 }
+
 #imgIconHold .imgIcon {
   height: 3rem;
   margin: 1rem;
 }
+
 #imgIconHold .imgIcon:nth-child(1) {
   animation-delay: 1s;
 }
+
 #imgIconHold .imgIcon:nth-child(2) {
   animation-delay: 2s;
 }
@@ -50,6 +64,7 @@ body {
 header {
   padding: 20px 0;
 }
+
 header .row {
   display: flex;
   align-items: center;
@@ -59,14 +74,17 @@ footer {
   font-size: 12px;
   padding: 20px 0;
 }
+
 footer .row {
   display: flex;
   align-items: center;
 }
+
 footer .col-sm-8 {
   display: flex;
   justify-content: flex-end;
 }
+
 footer ul {
   list-style: none;
 }
@@ -94,12 +112,14 @@ a {
   color: #ffffff;
   height: 400px;
 }
+
 .jumbotron h2 {
   font-size: 60px;
   font-weight: 700;
   margin: 0;
   color: #fff;
 }
+
 .jumbotron h3 {
   margin: 0 0 20px;
   color: #fff;
@@ -131,6 +151,7 @@ a {
   color: #fbd1d5;
   background-color: #ffffff;
 }
+
 .btn.btn-primary:hover {
   color: #ffffff;
   background-color: #fbd1d5;
@@ -145,6 +166,7 @@ a {
 figure {
   margin-bottom: 30px;
 }
+
 figure img {
   width: 100%;
   height: auto;
@@ -167,36 +189,46 @@ figure img {
 .progStyle {
   font-size: 0.75rem;
 }
+
 .progStyle span {
   border-radius: 8px;
   padding: 0.3rem;
   margin: 0.15rem;
   color: white;
 }
+
 .progStyle .htmlSpan {
   background: radial-gradient(ellipse farthest-corner at center center, #e44d26 0%, #f16529 70%);
 }
+
 .progStyle .cssSpan {
   background: radial-gradient(ellipse farthest-corner at center center, #264de4 0%, #2965f1 70%);
 }
+
 .progStyle .jsSpan {
   background: radial-gradient(ellipse farthest-corner at center center, #dabe24 0%, #f0db4f 70%);
 }
+
 .progStyle .jqSpan {
   background: radial-gradient(ellipse farthest-corner at center center, #0868ac 0%, #084672 70%);
 }
+
 .progStyle .bsSpan {
   background: radial-gradient(ellipse farthest-corner at center center, #8f13fe 0%, #6a10f3 70%);
 }
+
 .progStyle .sassSpan {
   background: radial-gradient(ellipse farthest-corner at center center, #cf649a 0%, #ec7bb5 70%);
 }
+
 .progStyle .bulmaSpan {
   background: radial-gradient(ellipse farthest-corner at center center, #35efd2 0%, #00d1b2 70%);
 }
+
 .progStyle .psSpan {
   background: radial-gradient(ellipse farthest-corner at center center, #00c8ff 0%, #001d26 70%);
 }
+
 .progStyle .dsSpan {
   background: radial-gradient(ellipse farthest-corner at center center, #39a5cc 0%, #36687f 70%);
 }
@@ -204,6 +236,7 @@ figure img {
 .logo {
   display: flex;
 }
+
 .logo img {
   margin: 2%;
   height: 60px;
@@ -230,6 +263,7 @@ canvas {
   transition: filter 0.3s ease;
   border-radius: 20px;
 }
+
 .imagist:hover {
   filter: brightness(70%);
 }
@@ -257,6 +291,7 @@ canvas {
   display: none;
   transition: all 0.3s ease;
 }
+
 #return-to-top i {
   color: #fff;
   margin: 0;
@@ -266,9 +301,11 @@ canvas {
   font-size: 19px;
   transition: all 0.3s ease;
 }
+
 #return-to-top:hover {
   background: rgba(0, 0, 0, 0.9);
 }
+
 #return-to-top:hover i {
   color: #fff;
   top: 5px;
@@ -282,6 +319,7 @@ canvas {
   align-items: start;
   padding: var(--size-0);
 }
+
 .scrollport > .presenter {
   block-size: var(--size-14);
   aspect-ratio: var(--ratio-square);
@@ -294,6 +332,7 @@ canvas {
   place-content: center;
   padding: 20;
 }
+
 .container #projectGrid .scrollport .card {
   min-width: 20rem;
 }
@@ -340,20 +379,11 @@ canvas {
   z-index: 100;
   top: -10px;
 }
+
 .grid-image img {
   width: 200px;
   display: block;
   box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.3);
-}
-@media (min-width: 700px) {
-  .grid-image img {
-    width: 400px;
-  }
-}
-@media (min-width: 1000px) {
-  .grid-image img {
-    width: 600px;
-  }
 }
 
 .image-1,
@@ -364,6 +394,7 @@ canvas {
 .image-6 {
   opacity: 0;
 }
+
 .image-1.active,
 .image-2.active,
 .image-3.active,
@@ -385,18 +416,23 @@ canvas {
   background: #f9f9f9;
   margin: auto;
 }
+
 .accordion-tabs {
   display: none;
 }
+
 .accordion-tabs :focus {
   outline: none;
 }
+
 .accordion-item {
   border-bottom: 1px solid #eaeaea;
 }
+
 .accordion-item:last-child {
   border: none;
 }
+
 .accordion-item__label {
   margin: 0;
   padding: 1.25rem;
@@ -404,6 +440,7 @@ canvas {
   transition: padding 0.2s ease;
   position: relative;
 }
+
 .accordion-item__label:after {
   content: "";
   height: 4px;
@@ -420,9 +457,11 @@ canvas {
   opacity: 1;
   transition: opacity 0.1s ease;
 }
+
 .accordion-item__label:hover {
   background: #d3e1ff;
 }
+
 .accordion-item__container {
   padding: 0 1.25em;
   height: 0;
@@ -430,24 +469,30 @@ canvas {
   opacity: 0;
   transition: padding 0.2s ease, opacity 0.5s 0.15s ease;
 }
+
 .accordion-active {
   background: rgba(68, 127, 255, 0.1);
 }
+
 .accordion-active .accordion-item__label {
   padding-bottom: 0;
   cursor: inherit;
 }
+
 .accordion-active .accordion-item__label:hover {
   background: none;
 }
+
 .accordion-active .accordion-item__label:after {
   opacity: 0;
 }
+
 .accordion-active .accordion-item__container {
   padding: 1.25em;
   height: auto;
   opacity: 1;
 }
+
 .accordion-active .accordion-item__container p:first-child,
 .accordion-active .accordion-item__container h1:first-child,
 .accordion-active .accordion-item__container h2:first-child,
@@ -457,6 +502,7 @@ canvas {
 .accordion-active .accordion-item__container h6:first-child {
   margin-top: 0;
 }
+
 .accordion-active .accordion-item__container p:last-child,
 .accordion-active .accordion-item__container h1:last-child,
 .accordion-active .accordion-item__container h2:last-child,
@@ -467,49 +513,6 @@ canvas {
   margin-bottom: 0;
 }
 
-@media (min-width: 600px) {
-  .accordion-tabs {
-    display: flex;
-    background: rgba(68, 127, 255, 0.1);
-  }
-  .accordion-tabs .accordion-tab {
-    background: rgba(68, 127, 255, 0.1);
-    font: inherit;
-    flex: 1;
-    border: none;
-    cursor: pointer;
-    transition: background 0.1s ease;
-  }
-  .accordion-tabs .accordion-tab:hover {
-    background: rgba(249, 249, 249, 0.01);
-  }
-  .accordion-tabs .accordion-tab:last-child {
-    border-right: 0;
-  }
-  .accordion-tabs .accordion-tab.accordion-active {
-    background: #f9f9f9;
-  }
-  .accordion-item {
-    padding: 2.4rem;
-    display: none;
-    border: none;
-    background: #f9f9f9;
-    min-height: 260px;
-  }
-  .accordion-item__label, .accordion-item__container {
-    padding: 0;
-    transition: inherit;
-  }
-  .accordion-item__label {
-    margin-bottom: 1.5rem;
-  }
-  .accordion-item.accordion-active {
-    display: block;
-  }
-  .accordion-item.accordion-active .accordion-item__container {
-    padding: 0;
-  }
-}
 .accordion {
   box-shadow: 0 1em 2em -0.9em rgba(0, 0, 0, 0.7);
   border-radius: 10px;
@@ -517,14 +520,11 @@ canvas {
   width: 100%;
   max-width: 400px;
 }
+
 .accordion .accordion-content {
   overflow: auto;
 }
-@media (min-width: 600px) {
-  .accordion {
-    max-width: 600px;
-  }
-}
+
 .accordion + p {
   color: rgba(255, 255, 255, 0.8);
   font-weight: 300;
@@ -538,71 +538,6 @@ canvas {
   }
   100% {
     opacity: 1;
-  }
-}
-@media only screen and (max-width: 2560px) {
-  .jumbotron {
-    background-position-y: -200px;
-  }
-}
-@media only screen and (max-width: 1440px) {
-  .jumbotron {
-    background-position-y: -120px;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .jumbotron {
-    background-position-y: -60px;
-  }
-}
-@media only screen and (min-width: 500px) {
-  .card.presenter {
-    transition: transform 0.3s ease-in-out;
-    margin: 20px;
-  }
-  .card.presenter:hover {
-    transform: scale(1.1);
-  }
-  #profilePic {
-    border-radius: 50px;
-  }
-  footer {
-    margin-top: 50px;
-  }
-}
-@media only screen and (max-width: 490px) {
-  .mobile {
-    display: block;
-  }
-  .desktop {
-    display: none;
-  }
-  .navbar {
-    display: inline-grid;
-    justify-content: center;
-  }
-  .navbar a {
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  .jumbotron {
-    background-size: cover;
-    background-position: center;
-  }
-  #titleLabel #imgIconHold {
-    max-width: 100%;
-    margin-left: 0.05rem;
-  }
-  #titleLabel #imgIconHold .imgIcon {
-    height: 2rem;
-    margin: 0.75rem;
-  }
-  #titleLabel .container #projectGrid .scrollport .card {
-    min-width: 15rem;
-  }
-  #titleLabel iframe {
-    width: 100%;
   }
 }
 /* .marquee-content:hover {
@@ -643,6 +578,7 @@ canvas {
   overflow: hidden;
   position: relative;
 }
+
 .marquee:before {
   position: absolute;
   top: 0;
@@ -653,6 +589,7 @@ canvas {
   left: 0;
   background: linear-gradient(to right, #111 0%, transparent 100%);
 }
+
 .marquee:after {
   position: absolute;
   top: 0;
@@ -670,6 +607,7 @@ canvas {
   display: flex;
   animation: scrolling var(--marquee-animation-duration) linear infinite;
 }
+
 .marquee-content li {
   display: flex;
   justify-content: center;
@@ -680,12 +618,135 @@ canvas {
   font-size: calc(var(--marquee-height) * 3 / 4);
   white-space: nowrap;
 }
+
 .marquee-content li img {
   height: 65%;
   width: auto;
   border: none;
 }
 
+#coolAssTitle {
+  font-size: 68px;
+  color: #ffffff;
+}
+
+#coolAssTitle span.text {
+  padding: 0;
+  padding-right: 4px;
+  border-right: 2px solid #ffffff;
+  animation: blink 0.75s infinite;
+  border-style: none;
+}
+
+#coolAssTitle .blue {
+  color: #4480ff;
+}
+
+#coolAssTitle .green {
+  color: #4caf50;
+}
+
+#coolAssTitle .yellow {
+  color: #f4b400;
+}
+
+#coolAssTitle .red {
+  color: #f44336;
+}
+
+#megaTop {
+  display: block;
+  padding: 164px 0;
+}
+
+@media only screen and (max-width: 2560px) {
+  .jumbotron {
+    background-position-y: -200px;
+  }
+}
+@media (min-width: 1441px) {
+  /*#faceOfPort {
+    position: relative;
+    bottom: 0;
+  }*/
+}
+@media only screen and (max-width: 1440px) {
+  .jumbotron {
+    background-position-y: -120px;
+  }
+}
+@media (min-width: 1000px) {
+  .grid-image img {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .jumbotron {
+    background-position-y: 0px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .jumbotron {
+    background-position-y: 0px;
+  }
+}
+@media (min-width: 700px) {
+  .grid-image img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 670px) {
+  #coolAssTitle {
+    font-size: 40px;
+  }
+}
+@media (min-width: 600px) {
+  .accordion {
+    max-width: 600px;
+  }
+  .accordion-tabs {
+    display: flex;
+    background: rgba(68, 127, 255, 0.1);
+  }
+  .accordion-tabs .accordion-tab {
+    background: rgba(68, 127, 255, 0.1);
+    font: inherit;
+    flex: 1;
+    border: none;
+    cursor: pointer;
+    transition: background 0.1s ease;
+  }
+  .accordion-tabs .accordion-tab:hover {
+    background: rgba(249, 249, 249, 0.01);
+  }
+  .accordion-tabs .accordion-tab:last-child {
+    border-right: 0;
+  }
+  .accordion-tabs .accordion-tab.accordion-active {
+    background: #f9f9f9;
+  }
+  .accordion-item {
+    padding: 2.4rem;
+    display: none;
+    border: none;
+    background: #f9f9f9;
+    min-height: 260px;
+  }
+  .accordion-item__label,
+  .accordion-item__container {
+    padding: 0;
+    transition: inherit;
+  }
+  .accordion-item__label {
+    margin-bottom: 1.5rem;
+  }
+  .accordion-item.accordion-active {
+    display: block;
+  }
+  .accordion-item.accordion-active .accordion-item__container {
+    padding: 0;
+  }
+}
 @media (max-width: 600px) {
   :root {
     --marquee-width: 100vw;
@@ -700,56 +761,19 @@ canvas {
     width: 5rem;
   }
 }
-@media (min-width: 100px) {
-  #faceOfPort {
-    padding: 0;
+@media only screen and (min-width: 500px) {
+  .card.presenter {
+    transition: transform 0.3s ease-in-out;
+    margin: 20px;
   }
-}
-@media (min-width: 1441px) {
-  /*#faceOfPort {
-    position: relative;
-    bottom: 0;
-  }*/
-}
-#coolAssTitle {
-  font-size: 68px;
-  color: #ffffff;
-}
-#coolAssTitle span.text {
-  padding: 0;
-  padding-right: 4px;
-  border-right: 2px solid #ffffff;
-  animation: blink 0.75s infinite;
-  border-style: none;
-}
-#coolAssTitle .blue {
-  color: #4480ff;
-}
-#coolAssTitle .green {
-  color: #4caf50;
-}
-#coolAssTitle .yellow {
-  color: #f4b400;
-}
-#coolAssTitle .red {
-  color: #f44336;
-}
-
-@keyframes blink {
-  from {
-    border: none;
+  .card.presenter:hover {
+    transform: scale(1.1);
   }
-  to {
-    border-color: 2px solid #ffffff;
-    border-bottom: none;
-    border-top: none;
-    border-left: none;
-    border-right: 2px solid #ffffff;
+  #profilePic {
+    border-radius: 50px;
   }
-}
-@media screen and (max-width: 670px) {
-  #coolAssTitle {
-    font-size: 40px;
+  footer {
+    margin-top: 50px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -757,7 +781,44 @@ canvas {
     font-size: 32px;
   }
 }
-#megaTop {
-  display: block;
-  padding: 164px 0;
-}/*# sourceMappingURL=style.css.map */
+@media only screen and (max-width: 490px) {
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .navbar {
+    display: inline-grid;
+    justify-content: center;
+  }
+  .navbar a {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .jumbotron {
+    background-size: cover;
+    background-position: center;
+  }
+  #titleLabel #imgIconHold {
+    max-width: 100%;
+    margin-left: 0.05rem;
+  }
+  #titleLabel #imgIconHold .imgIcon {
+    height: 2rem;
+    margin: 0.75rem;
+  }
+  #titleLabel .container #projectGrid .scrollport .card {
+    min-width: 15rem;
+  }
+  #titleLabel iframe {
+    width: 100%;
+  }
+}
+@media (min-width: 100px) {
+  #faceOfPort {
+    padding: 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */
