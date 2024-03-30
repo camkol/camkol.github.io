@@ -205,6 +205,10 @@ figure img {
   background: radial-gradient(ellipse farthest-corner at center center, #264de4 0%, #2965f1 70%);
 }
 
+.progStyle .reactSpan {
+  background: radial-gradient(ellipse farthest-corner at center center, #4eb0ca 0%, #61dafb 70%);
+}
+
 .progStyle .jsSpan {
   background: radial-gradient(ellipse farthest-corner at center center, #dabe24 0%, #f0db4f 70%);
 }
