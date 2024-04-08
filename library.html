@@ -138,6 +138,33 @@
 
             <div class="scroll-list__item js-scroll-list-item">
               <div class="image">
+                <img src="images/projects/comingSoon.jpg" alt="picsum.photos" />
+              </div>
+              <div class="desc">
+                <h4>Hot Pic</h4>
+                <p class="progStyle">
+                  <span class="htmlSpan">HTML</span>
+                  <span class="cssSpan">CSS</span>
+                  <span class="sassSpan">SASS</span>
+                </p>
+
+                <a
+                  class="rippleHolder"
+                  href="https://camkol.github.io/hotpic/"
+                  target="_blank"
+                >
+                  <button class="ripple">View</button></a
+                ><a
+                  href="https://github.com/camkol/hotpic.git"
+                  target="_blank"
+                  class="btn"
+                  >GitHub</a
+                >
+              </div>
+            </div>
+
+            <div class="scroll-list__item js-scroll-list-item">
+              <div class="image">
                 <img
                   src="images/projects/xyline(library).jpg"
                   alt="picsum.photos"
@@ -1578,33 +1605,6 @@
                 <img src="images/projects/comingSoon.jpg" alt="picsum.photos" />
               </div>
               <div class="desc">
-                <h4>Music Player</h4>
-                <p class="progStyle">
-                  <span class="jsSpan">JavaScript</span>
-                  <span class="htmlSpan">HTML</span>
-                  <span class="cssSpan">CSS</span>
-                </p>
-
-                <a
-                  class="rippleHolder"
-                  href="https://camkol.github.io/MusicPlayer/"
-                  target="_blank"
-                >
-                  <button class="ripple">View</button></a
-                ><a
-                  href="https://github.com/camkol/MusicPlayer.git"
-                  target="_blank"
-                  class="btn"
-                  >GitHub</a
-                >
-              </div>
-            </div>
-
-            <div class="scroll-list__item js-scroll-list-item">
-              <div class="image">
-                <img src="images/projects/comingSoon.jpg" alt="picsum.photos" />
-              </div>
-              <div class="desc">
                 <h4>My Music Player</h4>
                 <p class="progStyle">
                   <span class="jsSpan">JavaScript</span>
@@ -2725,19 +2725,6 @@
               <div class="desc">
                 <h4>Libra</h4>
                 <p class="progStyle"><span class="psSpan">Photoshop</span></p>
-
-                <a
-                  class="rippleHolder"
-                  href="https://camkol.github.io/Piano/"
-                  target="_blank"
-                >
-                  <button class="ripple">View</button></a
-                ><a
-                  href="https://github.com/camkol/Piano.git"
-                  target="_blank"
-                  class="btn"
-                  >GitHub</a
-                >
               </div>
             </div>
 
@@ -2853,6 +2840,69 @@
           </div>
         </div>
       </div>
+      <script>
+        $(document).ready(function () {
+          var Scrollbar = window.Scrollbar;
+          Scrollbar.use(window.OverscrollPlugin);
+          var customScroll = Scrollbar.init(
+            document.querySelector(".js-scroll-list"),
+            {
+              plugins: {
+                overscroll: true,
+              },
+            }
+          );
+
+          var listItem = $(".js-scroll-list-item");
+
+          listItem.eq(0).addClass("item-focus");
+          listItem.eq(1).addClass("item-next");
+
+          customScroll.addListener(function (status) {
+            var $content = $(".js-scroll-content");
+
+            var viewportScrollDistance = 0;
+
+            viewportScrollDistance = status.offset.y;
+            var viewportHeight = $content.height();
+            var listHeight = 0;
+            var $listItems = $content.find(".js-scroll-list-item");
+            for (var i = 0; i < $listItems.length; i++) {
+              listHeight += $($listItems[i]).height();
+            }
+
+            var top = status.offset.y;
+            // console.log(top);
+            var visibleCenterVertical = 0;
+            visibleCenterVertical = top;
+
+            var parentTop = 1;
+            var $lis = $(".js-scroll-list-item");
+            var $focusLi;
+            for (var i = 0; i < $lis.length; i++) {
+              var $li = $($lis[i]);
+              var liTop = $li.position().top;
+              var liRelTop = liTop - parentTop;
+              var distance = 0;
+              var distance = Math.abs(top - liRelTop);
+              var maxDistance = $(".js-scroll-content").height() / 2;
+              var distancePercent = distance / (maxDistance / 100);
+
+              if (liRelTop + $li.parent().scrollTop() > top) {
+                if (!$li.hasClass("item-focus")) {
+                  $li.prev().addClass("item-hide");
+                  $lis.removeClass("item-focus");
+                  $lis.removeClass("item-next");
+                }
+                $li.removeClass("item-hide");
+                $li.addClass("item-focus");
+                $li.next().addClass("item-next");
+                break;
+              }
+            }
+          });
+        });
+      </script>
     </section>
 
     <footer class="container">
@@ -2914,10 +2964,10 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/smooth-scrollbar.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.3.1/plugins/overscroll.js"></script>
+    <script src="js/main.js"></script>
     <script type="text/javascript" src="js/bubbles.js"></script>
     <script type="text/javascript" src="js/mc4.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/rolly.js"></script>
     <script type="text/javascript" src="js/alphabet.js"></script>
+    <script src="js/rolly.js"></script>
   </body>
 </html>
