@@ -325,8 +325,8 @@ const library = [
     image: "images/projects/comingSoon.jpg",
     type: professional,
     language: [html, css, sass],
-    site: "https://camkol.github.io/hotpic/",
-    gitHub: "https://github.com/camkol/hotpic.git",
+    site: "https://hotpic.netlify.app/",
+    gitHub: "https://github.com/camkol/hotpic-react.git",
   },
   {
     name: "HTML/CSS Cheatsheet",
