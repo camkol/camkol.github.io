@@ -115,9 +115,9 @@ const library = [
     name: "Chris the Producer",
     image: "images/projects/level(library).jpg",
     type: professional,
-    language: [html, css, sass],
-    site: "https://camkol.github.io/Chris/",
-    gitHub: "https://github.com/camkol/Chris.git",
+    language: [react, javaScript, html, css, sass],
+    site: "https://christheproducer.netlify.app/",
+    gitHub: "https://github.com/camkol/chris-react.git",
   },
   {
     name: "City Skyline",

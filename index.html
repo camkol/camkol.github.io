@@ -139,6 +139,7 @@
       </div>
       <div id="projectGrid">
         <div class="scrollport">
+          <!-- Project: XysTiny find -->
           <div
             class="card presenter"
             data-toggle="modal"
@@ -167,6 +168,36 @@
             </div>
           </div>
 
+          <!-- Project: HotPic -->
+          <div
+            class="card presenter"
+            data-toggle="modal"
+            data-target="#enlargeHotpicModal"
+          >
+            <div class="card-body presser">
+              <div class="imager" id="hotpic">
+                <img
+                  class="imagist"
+                  src="images/projects/hotpic.jpg"
+                  alt=""
+                  onmouseover="this.src='images/projects/hotpic-site.JPG';"
+                  onmouseout="this.src='images/projects/hotpic.jpg';"
+                />
+              </div>
+
+              <hr />
+              <h5 class="card-title">HotPic</h5>
+              <p class="progStyle card-subtitle mb-2 text-muted">
+                <span class="reactSpan">React</span>
+                <span class="jsSpan">JavaScript</span>
+                <span class="htmlSpan">HTML</span>
+                <span class="cssSpan">CSS</span>
+                <span class="sassSpan">SASS</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Project: Chris -->
           <div
             class="card presenter"
             data-toggle="modal"
@@ -186,6 +217,8 @@
               <hr />
               <h5 class="card-title">Chris the Producer</h5>
               <p class="progStyle card-subtitle mb-2 text-muted">
+                <span class="reactSpan">React</span>
+                <span class="jsSpan">JavaScript</span>
                 <span class="htmlSpan">HTML</span>
                 <span class="cssSpan">CSS</span>
                 <span class="sassSpan">SASS</span>
@@ -497,6 +530,85 @@
             </div>
           </div>
         </div>
+        <!-- Modal for Hotpic Image -->
+        <div
+          class="modal fade"
+          id="enlargeHotpicModal"
+          tabindex="-1"
+          aria-labelledby="enlargeHotpicModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <img
+                  src="images/projects/hotpic-site.JPG"
+                  alt=""
+                  style="width: 100%"
+                />
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- Customized content goes here -->
+                <h5>
+                  <a
+                    href="https://github.com/camkol/hotpic-react.git"
+                    class="card-link"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </h5>
+                <hr />
+                <h4>
+                  <a
+                    href="https://hotpic.netlify.app/"
+                    class="card-link"
+                    target="_blank"
+                    >View Page</a
+                  >
+                </h4>
+                <hr />
+                <h4>Process</h4>
+                <ul>
+                  <li>
+                    I developed this webpage specifically for my mother's
+                    product, the "Hot Pic," which offers innovative solutions
+                    for natural ethnic hair care.
+                  </li>
+                  <li>
+                    This project marks my inaugural solo venture in applying
+                    React skills that I've learned. It represents a significant
+                    milestone in my journey as a developer, showcasing the
+                    practical application of React concepts.
+                  </li>
+                  <li>
+                    React is utilized to build modular components for different
+                    sections of the webpage, enhancing reusability and
+                    maintainability.
+                  </li>
+                  <li>
+                    The Sections component dynamically renders sections based on
+                    data stored in the section array, allowing flexibility and
+                    scalability.
+                  </li>
+                  <li>
+                    SCSS (Sass) is used for styling, offering enhanced features
+                    like variables, nesting, and mixins to maintain consistency
+                    and manage complexity.
+                  </li>
+                </ul>
+                <!-- End of customized content -->
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Modal for Chris the Producer Image -->
         <div
           class="modal fade"
@@ -567,9 +679,10 @@
                     styling.
                   </li>
                   <li>
-                    Incorporated Font Awesome effects, adjusted styles according
-                    to the client's feedback, and changed the font to meet the
-                    client's specific desire for a glowing effect.
+                    Successfully converted the personalized music producer
+                    webpage, featuring tailored layouts, fonts, and styles
+                    including custom glowing effects and Font Awesome icons,
+                    into a dynamic and responsive React application.
                   </li>
                 </ul>
                 <!-- End of customized content -->
