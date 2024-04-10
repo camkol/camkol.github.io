@@ -259,21 +259,21 @@
           <div
             class="card presenter"
             data-toggle="modal"
-            data-target="#enlargeMemeGeneratorModal"
+            data-target="#enlargeMyMusicPlayerModal"
           >
             <div class="card-body presser">
-              <div class="imager" id="memeGenerator">
+              <div class="imager" id="MyMusicPlayer">
                 <img
                   class="imagist"
-                  src="images/projects/memegenerator.jpg"
+                  src="images/projects/mymusicplayer.jpg"
                   alt=""
-                  onmouseover="this.src='images/projects/meme-site.JPG';"
-                  onmouseout="this.src='images/projects/memegenerator.jpg';"
+                  onmouseover="this.src='images/projects/mymusicplayer-site.JPG';"
+                  onmouseout="this.src='images/projects/mymusicplayer.jpg';"
                 />
               </div>
 
               <hr />
-              <h5 class="card-title">MEME Generator</h5>
+              <h5 class="card-title">My Music Player</h5>
               <p class="progStyle card-subtitle mb-2 text-muted">
                 <span class="jsSpan">JavaScript</span>
                 <span class="htmlSpan">HTML</span>
@@ -336,128 +336,10 @@
               </p>
             </div>
           </div>
-
-          <!-- <div class="card presenter">
-          <div class="card-body presser">
-            <div class="imager">
-              <img
-                class="imagist"
-                src="images/projects/museumofsweets.jpg"
-                alt=""
-                id="museumOfSweets"
-              />
-            </div>
-
-            <hr />
-            <h5 class="card-title">Museum of Sweets</h5>
-            <h6 class="card-subtitle mb-2 text-muted">
-              JavaScript | HTML | Bootstrap | CSS | SASS
-            </h6>
-          </div>
-
-          <div class="card-body views">
-            <h5>
-              <a
-                href="https://github.com/camkol/Museum_Of_Sweets.git"
-                class="card-link"
-                target="_blank"
-                >GitHub</a
-              >
-            </h5>
-            <hr />
-            <h4>
-              <a
-                href="https://camkol.github.io/Museum_Of_Sweets/"
-                class="card-link"
-                target="_blank"
-                >View Page</a
-              >
-            </h4>
-            <hr />
-            <h4>Process</h4>
-            <ul>
-              <li>
-                JavaScript is applied to create a scrolling animation, changing
-                the navigation bar's background color dynamically.
-              </li>
-              <li>
-                Bootstrap classes are employed to improve the website's
-                responsiveness and implement a structured grid layout.
-              </li>
-
-              <li>
-                The design emphasizes simplicity and cleanliness, aligning with
-                the visual appeal sought for the website.
-              </li>
-
-              <li>
-                CSS styles contribute to the visual attractiveness by
-                highlighting specific color schemes and font characteristics.
-              </li>
-            </ul>
-          </div>
-        </div>     
-        
-        <div class="card presenter col-md-4 col-xs-1">
-          <div class="card-body presser">
-            <div class="imager">
-              <img
-                class="imagist"
-                src="images/projects/scorekeeper.jpg"
-                alt=""
-                id="scoreKeeper"
-              />
-            </div>
-
-            <hr />
-            <h5 class="card-title">Score Keeper</h5>
-            <h6 class="card-subtitle mb-2 text-muted">
-              JavaScript | HTML | Bulma | CSS | SASS
-            </h6>
-          </div>
-
-          <div class="card-body views">
-            <h5>
-              <a
-                href="https://github.com/camkol/ScoreKeeper.git"
-                class="card-link"
-                target="_blank"
-                >GitHub</a
-              >
-            </h5>
-            <hr />
-            <h4>
-              <a
-                href="https://camkol.github.io/ScoreKeeper/"
-                class="card-link"
-                target="_blank"
-                >View Page</a
-              >
-            </h4>
-            <hr />
-            <h4>Process</h4>
-            <ul>
-              <li>Utilized Bulma CSS framework for styling.</li>
-              <li>
-                Included buttons to increment scores for two players and a reset
-                button.
-              </li>
-              <li>Linked the app.js file for functionality.</li>
-              <li>
-                Defined player objects (p1 and p2) with score, button, and
-                display elements. Created a function to update scores, handle
-                game over conditions, and disable buttons.
-              </li>
-              <li>
-                Set up a reset button, winning score selector, and variables for
-                winning score and game status. Implemented a reset function to
-                restart the game, clearing scores and re-enabling buttons.
-              </li>
-            </ul>
-          </div>
-        </div>-->
         </div>
       </div>
+
+      <!-- Modal for Xys tiny finds Image -->
       <div id="modalBag">
         <div
           class="modal fade"
@@ -778,16 +660,16 @@
         <!-- Modal for MEME Generator Image -->
         <div
           class="modal fade"
-          id="enlargeMemeGeneratorModal"
+          id="enlargeMyMusicPlayerModal"
           tabindex="-1"
-          aria-labelledby="enlargeMemeGeneratorModalLabel"
+          aria-labelledby="enlargeMyMusicPlayerModalLabel"
           aria-hidden="true"
         >
           <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
               <div class="modal-header">
                 <img
-                  src="images/projects/meme-site.JPG"
+                  src="images/projects/mymusicplayer-site.JPG"
                   alt=""
                   style="width: 100%"
                 />
@@ -804,7 +686,7 @@
                 <!-- Customized content goes here -->
                 <h5>
                   <a
-                    href="https://github.com/camkol/MEME-generator.git"
+                    href="https://github.com/camkol/MyMusicPlayer.git"
                     class="card-link"
                     target="_blank"
                     >GitHub</a
@@ -813,7 +695,7 @@
                 <hr />
                 <h4>
                   <a
-                    href="https://camkol.github.io/MEME-generator/"
+                    href="https://camkol.github.io/MyMusicPlayer/"
                     class="card-link"
                     target="_blank"
                     >View Page</a
@@ -823,23 +705,36 @@
                 <h4>Process</h4>
                 <ul>
                   <li>
-                    This code along aims to demystify API usage by building a
-                    straightforward meme generator.
+                    In the project's HTML structure, the main content is housed
+                    within an index.html file, featuring a container division
+                    that holds the music player and playlist components.
                   </li>
                   <li>
-                    Utilized document.querySelector to efficiently select DOM
-                    elements.
+                    These components are styled using CSS defined in a
+                    styles.css file, which customizes various aspects like font
+                    styles, colors, and layout properties.
                   </li>
                   <li>
-                    Defined a function (updateDetails) responsible for updating
-                    meme details based on the API response.
+                    The interactive behavior of the music player is managed
+                    through JavaScript in a script.js file, which utilizes event
+                    listeners to handle song playback, navigation, and playlist
+                    management functions.
                   </li>
                   <li>
-                    Leveraged the fetch API to make asynchronous requests.
+                    The playlist data, containing details of each song, is
+                    stored in an array format within the JavaScript file,
+                    enabling dynamic song selection and rendering.
                   </li>
                   <li>
-                    Processed the JSON response to dynamically update meme
-                    details on the web page.
+                    Audio playback is controlled using the Audio object,
+                    allowing for play, pause, and track navigation
+                    functionalities.
+                  </li>
+                  <li>
+                    Together, these files and their associated code create a
+                    cohesive web application for playing and managing a music
+                    playlist, with an emphasis on responsive design and user
+                    interaction.
                   </li>
                 </ul>
                 <!-- End of customized content -->
