@@ -359,8 +359,8 @@ canvas {
 
 .section-grid {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  height: 100vh;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
 }
 
 .left,
