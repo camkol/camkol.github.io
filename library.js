@@ -274,6 +274,14 @@ const library = [
     gitHub: "https://github.com/camkol/DragonRepeller.git",
   },
   {
+    name: "E- Commerce",
+    image: "images/projects/comingson.jpg",
+    type: collaborative,
+    language: [react, javaScript, html, css, sass],
+    site: "https://ecommerceproject2.netlify.app/",
+    gitHub: "https://github.com/camkol/ecommerce.git",
+  },
+  {
     name: "Eat n' Split",
     image: "images/projects/comingson.jpg",
     type: classPersonal,
