@@ -85,6 +85,7 @@
       <h1 id="coolAssTitle">
         <span class="text blue">Front-end</span> Developer
       </h1>
+
       <div id="faceOfPort">
         <div class="marquee">
           <ul class="marquee-content">
@@ -189,6 +190,35 @@
 
               <hr />
               <h5 class="card-title">Chris the Producer</h5>
+              <p class="progStyle card-subtitle mb-2 text-muted">
+                <span class="reactSpan">React</span>
+                <span class="jsSpan">JavaScript</span>
+                <span class="htmlSpan">HTML</span>
+                <span class="cssSpan">CSS</span>
+                <span class="sassSpan">SASS</span>
+              </p>
+            </div>
+          </div>
+
+          <!-- Project: Shoppinglist -->
+          <div
+            class="card presenter"
+            data-toggle="modal"
+            data-target="#enlargeShoppinglistModal"
+          >
+            <div class="card-body presser">
+              <div class="imager" id="shoppinglist">
+                <img
+                  class="imagist"
+                  src="images/projects/shoppinglist.jpg"
+                  alt=""
+                  onmouseover="this.src='images/projects/shoppinglist-site.jpg';"
+                  onmouseout="this.src='images/projects/shoppinglist.jpg';"
+                />
+              </div>
+
+              <hr />
+              <h5 class="card-title">Shoppinglist</h5>
               <p class="progStyle card-subtitle mb-2 text-muted">
                 <span class="reactSpan">React</span>
                 <span class="jsSpan">JavaScript</span>
@@ -490,6 +520,88 @@
                     webpage, featuring tailored layouts, fonts, and styles
                     including custom glowing effects and Font Awesome icons,
                     into a dynamic and responsive React application.
+                  </li>
+                </ul>
+                <!-- End of customized content -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Modal for Shoppinglist Image -->
+        <div
+          class="modal fade"
+          id="enlargeShoppinglistModal"
+          tabindex="-1"
+          aria-labelledby="enlargeShoppinglistModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <img
+                  src="images/projects/shoppinglist-site.jpg"
+                  alt=""
+                  style="width: 100%"
+                />
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- Customized content goes here -->
+                <h5>
+                  <a
+                    href="https://github.com/camkol/shopping-list.git"
+                    class="card-link"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </h5>
+                <hr />
+                <h4>
+                  <a
+                    href="https://shoppinglist25.netlify.app/"
+                    class="card-link"
+                    target="_blank"
+                    >View Page</a
+                  >
+                </h4>
+                <hr />
+                <h4>Process</h4>
+                <ul>
+                  <li>
+                    This code snippet comprises a simple React application for
+                    managing a packing list.
+                  </li>
+                  <li>
+                    It includes components for adding items, displaying the
+                    list, and providing statistics.
+                  </li>
+                  <li>
+                    The `App` component serves as the main container, managing
+                    state for the list of items and passing down relevant
+                    functions to child components.
+                  </li>
+                  <li>
+                    The `Form` component handles user input for adding new
+                    items, while the `ShoppingList` component renders the list
+                    itself, allowing users to toggle item status and clear the
+                    list.
+                  </li>
+                  <li>
+                    Additionally, the `Stats` component calculates and displays
+                    statistics based on the found status of items, providing
+                    users with feedback on their progress.
+                  </li>
+                  <li>
+                    Overall, this application demonstrates how React components
+                    can interact to create a dynamic user interface for managing
+                    tasks.
                   </li>
                 </ul>
                 <!-- End of customized content -->
