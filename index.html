@@ -229,6 +229,35 @@
             </div>
           </div>
 
+          <!-- Project: Jammming -->
+          <div
+            class="card presenter"
+            data-toggle="modal"
+            data-target="#enlargeSoleShoesModal"
+          >
+            <div class="card-body presser">
+              <div class="imager" id="jammming">
+                <img
+                  class="imagist"
+                  src="images/projects/jammming.jpg"
+                  alt=""
+                  onmouseover="this.src='images/projects/jammming-site.jpg';"
+                  onmouseout="this.src='images/projects/jammming.jpg';"
+                />
+              </div>
+
+              <hr />
+              <h5 class="card-title">Jammming</h5>
+              <p class="progStyle card-subtitle mb-2 text-muted">
+                <span class="reactSpan">React</span>
+                <span class="jsSpan">JavaScript</span>
+                <span class="htmlSpan">HTML</span>
+                <span class="cssSpan">CSS</span>
+                <span class="psSpan">Photoshop</span>
+              </p>
+            </div>
+          </div>
+
           <!-- Project: Ravenous -->
           <div
             class="card presenter"
@@ -307,34 +336,6 @@
               <h5 class="card-title">My Music Player</h5>
               <p class="progStyle card-subtitle mb-2 text-muted">
                 <span class="jsSpan">JavaScript</span>
-                <span class="htmlSpan">HTML</span>
-                <span class="cssSpan">CSS</span>
-              </p>
-            </div>
-          </div>
-
-          <!-- Project: Sole Shoes -->
-          <div
-            class="card presenter"
-            data-toggle="modal"
-            data-target="#enlargeSoleShoesModal"
-          >
-            <div class="card-body presser">
-              <div class="imager" id="soleShoes">
-                <img
-                  class="imagist"
-                  src="images/projects/soleshoes.jpg"
-                  alt=""
-                  onmouseover="this.src='images/projects/soleshoes-site.JPG';"
-                  onmouseout="this.src='images/projects/soleshoes.jpg';"
-                />
-              </div>
-
-              <hr />
-              <h5 class="card-title">Sole Shoes</h5>
-              <p class="progStyle card-subtitle mb-2 text-muted">
-                <span class="jsSpan">JavaScript</span>
-                <span class="jqSpan">jQuery</span>
                 <span class="htmlSpan">HTML</span>
                 <span class="cssSpan">CSS</span>
               </p>
@@ -609,6 +610,125 @@
             </div>
           </div>
         </div>
+        <!-- Modal for Jammming Image -->
+        <div
+          class="modal fade"
+          id="enlargeJammmingModal"
+          tabindex="-1"
+          aria-labelledby="enlargeJammmingModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <img
+                  src="images/projects/jammming-site.JPG"
+                  alt=""
+                  style="width: 100%"
+                />
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <!-- Customized content goes here -->
+                <h5>
+                  <a
+                    href="https://github.com/camkol/jammming.git"
+                    class="card-link"
+                    target="_blank"
+                    >GitHub</a
+                  >
+                </h5>
+                <hr />
+                <h4>
+                  <a
+                    href="https://camkol.github.io/jammming/"
+                    class="card-link"
+                    target="_blank"
+                    >View Page</a
+                  >
+                </h4>
+                <hr />
+                <h4>Process</h4>
+                <ul>
+                  <li>
+                    <strong>Create Static Components:</strong> Build the basic
+                    structure of your app using React components, including
+                    static versions of SearchBar, SearchResults, Playlist, and
+                    TrackList.
+                  </li>
+                  <li>
+                    <strong
+                      >Pass Down Search Result and Render Result List:</strong
+                    >
+                    Implement logic to pass search results from the parent
+                    component to the SearchResults component and render a list
+                    of tracks.
+                  </li>
+                  <li>
+                    <strong>Pass Down Playlist to TrackList:</strong> Ensure
+                    that the current playlist is passed down as props to the
+                    TrackList component so it can render the tracks in the
+                    playlist.
+                  </li>
+                  <li>
+                    <strong>Add Tracks to a Playlist:</strong> Create
+                    functionality that allows users to add tracks from the
+                    search results to their playlist by clicking an "Add"
+                    button.
+                  </li>
+                  <li>
+                    <strong>Remove Tracks from a Playlist:</strong> Implement a
+                    feature that enables users to remove tracks from their
+                    playlist by clicking a "Remove" button.
+                  </li>
+                  <li>
+                    <strong>Change the Name of a Playlist:</strong> Add an input
+                    field that allows users to change the name of their playlist
+                    and update the state accordingly.
+                  </li>
+                  <li>
+                    <strong
+                      >Create a Method that Saves the Playlist to a User's
+                      Account:</strong
+                    >
+                    Develop a method that uses the Spotify API to save the
+                    user's playlist to their Spotify account.
+                  </li>
+                  <li>
+                    <strong>Hook up Search Bar to Spotify Search:</strong>
+                    Connect the SearchBar component to the Spotify API so that
+                    users can search for tracks and get results displayed in the
+                    SearchResults component.
+                  </li>
+                  <li>
+                    <strong>Obtain a Spotify Access Token:</strong> Implement
+                    authentication logic to obtain an access token from Spotify,
+                    allowing you to make authorized requests to the Spotify API.
+                  </li>
+                  <li>
+                    <strong>Implement Spotify Search Request:</strong> Write the
+                    logic to make a search request to the Spotify API using the
+                    access token and fetch the search results.
+                  </li>
+                  <li>
+                    <strong>Save a User's Playlist:</strong> Use the Spotify API
+                    to save the user's playlist, including creating a new
+                    playlist and adding tracks to it, and then update the UI to
+                    reflect the saved state.
+                  </li>
+                </ul>
+                <!-- End of customized content -->
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Modal for Ravenous Image -->
         <div
           class="modal fade"
@@ -848,74 +968,7 @@
             </div>
           </div>
         </div>
-        <!-- Modal for Sole Shoes Image -->
-        <div
-          class="modal fade"
-          id="enlargeSoleShoesModal"
-          tabindex="-1"
-          aria-labelledby="enlargeSoleShoesModalLabel"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-              <div class="modal-header">
-                <img
-                  src="images/projects/soleshoes-site.JPG"
-                  alt=""
-                  style="width: 100%"
-                />
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <!-- Customized content goes here -->
-                <h5>
-                  <a
-                    href="https://github.com/camkol/SoleShoes.git"
-                    class="card-link"
-                    target="_blank"
-                    >GitHub</a
-                  >
-                </h5>
-                <hr />
-                <h4>
-                  <a
-                    href="https://camkol.github.io/SoleShoes/"
-                    class="card-link"
-                    target="_blank"
-                    >View Page</a
-                  >
-                </h4>
-                <hr />
-                <h4>Process</h4>
-                <ul>
-                  <li>jQuery used for simple interactions.</li>
-                  <li>
-                    Hidden navigation menu with dropdown options. Hidden login
-                    form that slides down when the login button is clicked.
-                  </li>
-                  <li>Responsive design for different screen sizes.</li>
-                  <li>
-                    Media queries used to adjust button sizes and fonts for
-                    different screen widths.
-                  </li>
-                  <li>
-                    This process creates a visually appealing and interactive
-                    website, showcasing products and providing user-friendly
-                    navigation.
-                  </li>
-                </ul>
-                <!-- End of customized content -->
-              </div>
-            </div>
-          </div>
-        </div>
+
         <!-- Modal for Colmar Academy Image -->
         <div
           class="modal fade"
