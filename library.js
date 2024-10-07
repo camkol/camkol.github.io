@@ -626,6 +626,14 @@ const library = [
     gitHub: "https://github.com/camkol/OliviaWoodruffPortfolio.git",
   },
   {
+    name: "Optimization Lesson(needs work)",
+    image: "images/projects/comingSoon.jpg",
+    type: "classPersonal",
+    language: ["react", "javaScript", "html", "css"],
+    site: "https://optimizationlesson.netlify.app/",
+    gitHub: "https://github.com/camkol/optimization-lesson.git",
+  },
+  {
     name: "Palindrome Checker",
     image: "images/projects/comingSoon.jpg",
     type: "classPersonal",
