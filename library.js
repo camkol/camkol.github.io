@@ -246,8 +246,16 @@ const library = [
     image: "images/projects/comingSoon.jpg",
     type: "classPersonal",
     language: ["react", "javaScript", "html", "css"],
-    site: "https://contextmixtape.netlify.app/",
-    gitHub: "https://github.com/camkol/context-mixtape.git",
+    site: "https://copycattest.netlify.app/",
+    gitHub: "https://github.com/camkol/copycat-test.git",
+  },
+  {
+    name: "Counter",
+    image: "images/projects/comingSoon.jpg",
+    type: "classPersonal",
+    language: ["redux", "react", "javaScript", "html", "css"],
+    site: "https://counterredux924.netlify.app/",
+    gitHub: "https://github.com/camkol/counter-redux.git",
   },
   {
     name: "Cupful Cafe",
@@ -264,6 +272,14 @@ const library = [
     language: ["javaScript", "html", "css", "photoshop"],
     site: "https://camkol.github.io/CuriousOrnithologist/",
     gitHub: "https://github.com/camkol/CuriousOrnithologist.git",
+  },
+  {
+    name: "Currency Converter",
+    image: "images/projects/comingSoon.jpg",
+    type: "classPersonal",
+    language: ["react", "javaScript", "html", "css"],
+    site: "https://currencyconverter092024.netlify.app/",
+    gitHub: "https://github.com/camkol/currency-converter.git",
   },
   {
     name: "Dasmoto-s Arts n Crafts",
@@ -338,6 +354,14 @@ const library = [
     gitHub: "https://github.com/camkol/excursion.git",
   },
   {
+    name: "Expense Tracker",
+    image: "images/projects/comingson.jpg",
+    type: "classPersonal",
+    language: ["react", "javaScript", "html", "css"],
+    site: "https://expensetrackerredux.netlify.app/",
+    gitHub: "https://github.com/camkol/expense-tracker-redux.git",
+  },
+  {
     name: "Faq Accordion",
     image: "images/projects/comingSoon.jpg",
     type: "classPersonal",
@@ -362,6 +386,14 @@ const library = [
     gitHub: "https://github.com/camkol/Ferris_Wheel.git",
   },
   {
+    name: "Fetching Stuff",
+    image: "images/projects/comingSoon.jpg",
+    type: "classPersonal",
+    language: ["javaScript", "html", "css"],
+    site: "https://camkol.github.io/fetching-stuff/",
+    gitHub: "https://github.com/camkol/fetching-stuff.git",
+  },
+  {
     name: "Flash Cards",
     image: "images/projects/comingSoon.jpg",
     type: "classPersonal",
@@ -376,6 +408,14 @@ const library = [
     language: ["html", "css"],
     site: "https://camkol.github.io/Flexbox-To-doApp/",
     gitHub: "https://github.com/camkol/Flexbox-To-doApp.git",
+  },
+  {
+    name: "Football Team Cards",
+    image: "images/projects/comingSoon.jpg",
+    type: "classPersonal",
+    language: ["javaScript", "html", "css"],
+    site: "https://camkol.github.io/FootballTeamCards/",
+    gitHub: "https://github.com/camkol/FootballTeamCards.git",
   },
   {
     name: "Form a Story",
@@ -424,6 +464,14 @@ const library = [
     language: ["react", "javaScript", "html", "css", "sass", "photoshop"],
     site: "https://hotpic.netlify.app/",
     gitHub: "https://github.com/camkol/hotpic-react.git",
+  },
+  {
+    name: "How React Works",
+    image: "images/projects/comingSoon.jpg",
+    type: "classPersonal",
+    language: ["react", "javaScript", "html", "css"],
+    site: "https://howreactworks1024.netlify.app/",
+    gitHub: "https://github.com/camkol/how-react-works.git",
   },
   {
     name: "HTML/CSS Cheatsheet",
